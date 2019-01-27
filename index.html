@@ -3,9 +3,6 @@
   <head>
     <title>Portfolio | Emma Kwiatkowski</title>
     <meta name="viewport" content="width=device-width, inital-scale=1">
-    <!-- Material Design Lite -->
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-lime.min.css">
-    <script defer src="https://cdoe.getmdl.io/1.3.0/material.min.js"></script>
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,61 +11,65 @@
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <h1>Emma Kwiatkowski</h1>
-      <p class="slogan">Frontend designer from Raleigh-Durham</p>
+    <header>
+      <nav>
+        <img id="logo" src="images\ek_logo.png" alt="logo"/>
+        <ul>
+          <li>ABOUT</li>
+          <li>WORK</li>
+          <li>RESUME</li>
+        </ul>
+      </nav>
+      <h1>Emma K</h1>
+      <p class="slogan">
+            UX designer with a<br/>
+            frontend development background<br/>
+            in Raleigh, NC
+      </p>
+      <p id="hey">
+        Hey!
+      </p>
     </header>
-    <main class="mdl-layout__content mdl-grid">
-      <div class="project featured-project mdl-grid mdl-cell mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet">
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-cell mdl-cell--7-col">
-          <h2 class="mdl-card__title-text">Featured Project Name</h2>
-          <p class="project-description mdl-card__supporting-text">Project description text</p>
-        </div>
-      </div>
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-2" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div class="mdl-card__supporting-text">Project description text</div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-3" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div class="mdl-card__supporting-text">Project description text</div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-4" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Project Name</h2>
-        </div>
-        <div class="mdl-card__supporting-text">Project description text</div>
-      </div>
-
+    <main>
+      <section id="project-1">
+          <img id="project-1-img" src="images\recipe_page.png"
+          alt="Project Image" />
+          <article>
+            <h2>Heirloom</h2>
+            <p id="project-1-roles">RESEARCH | DESIGN | TESTING</p>
+            <p id="project-1-story">“As a person, I want to store and <br/>
+                share personal recipes.”
+            </p>
+          </article>
+      </section>
+      <section id="nav-contact">
+          <article id="circle-nav">
+            <ul>
+              <li>Learn More About Me</li>
+              <li>View My Resume</li>
+              <li>See More Work</li>
+            </ul>
+          </article>
+          <article id="contact">
+            <h2>Let's Chat</h2>
+            <p>
+              <a href="mailto:hey@emmak.design">
+                hey@emmak.design
+              </a>
+            </p>
+          </article>
+      </section>
     </main>
     <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
+      <div class="email">
+          <a href="mailto:hey@emmak.design">
+            hey@emmak.design
+          </a>
+      </div>
+      <ul>
         <li>
           <a href="https://www.linkedin.com/in/emmakwiatkowski/">
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/EmmaRyn">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
           </a>
         </li>
         <li>
@@ -77,8 +78,8 @@
           </a>
         </li>
         <li>
-          <a href="mailto:emmakkwiat@gmail.com">
-            <i class="fa fa-envelope-square" aria-hidden="true"></i>
+          <a href="https://github.com/EmmaRyn">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
           </a>
         </li>
       </ul>

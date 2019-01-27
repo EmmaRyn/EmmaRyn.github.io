@@ -12,6 +12,7 @@ header {
 h1 {
   color: hsla(0, 0%, 95%, 0.9);
   font-weight: bold;
+  font-family: Sofia, Comfortaa, sans-serif;
 }
 
 .slogan {
@@ -20,7 +21,7 @@ h1 {
   font-size: 1.6rem;
 }
 
-main {
+section {
   max-width: 900px;
 }
 

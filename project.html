@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio | Emma Kwiatkowski</title>
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img id="logo" src="images\ek_logo.png" alt="logo"/>
+        <ul>
+          <li>ABOUT</li>
+          <li>WORK</li>
+          <li>RESUME</li>
+        </ul>
+      </nav>
+      <h1>Heirloom</h1>
+      <p class="slogan">
+          Heirloom is a cloud application that helps you store, organize and
+          share personal recipes.
+      </p>
+      <button type="button">View Prototype</button>
+    </header>
+    <main>
+      <section id="img-area">
+          <img src="images\heirloom-background.png" alt="Heirloom Homepage" />
+      </section>
+      <section id="problem">
+        <div class="section-header">
+          <span>The Problem</span>
+          <img src="images\blue-circle.png" alt="The Problem" />
+        </div>
+          <ul>
+            <li>
+              <p>Competition</p>
+              <p>
+                Since there are so many storage applications out there, I really
+                needed to design one that would make users choose this one and
+                still meet the standards of existing apps.
+              </p>
+            </li>
+            <li>
+              <p>Complexity and Flexibility</p>
+              <p>
+                A recipe on a website has cook time, servings, nutrition,
+                ingredients, directions and images all laid out. A lot of this
+                information isn’t immediately available if it’s a family recipe
+                or you haven’t made it yet. This application needs to be able
+                to hold all the important information without relying on it all
+                 being available on creation.
+              </p>
+            </li>
+            <li>
+              <p>Simplicity</p>
+              <p>
+                Recipe sites that currently exist all have a lot going on. This
+                application needed to be designed so that it was able to do
+                everything that a recipe application needed to do without being
+                overwhelming and difficult to use.
+              </p>
+            </li>
+          </ul>
+      </section>
+      <section id="solution">
+        <div class="section-header">
+          <span>The Solution</span>
+          <img src="images\red-circle.png" alt="The Solution" />
+        </div>
+          <img id="soution-img" src="images\heirloom-solution.png"
+          alt="Heirloom Solution" />
+          <p>
+            Heirloom is focused on storing personal recipes whether it is a
+            family recipe or one you just cooked using HelloFresh.<br/>
+            <strong>
+              The key to this application’s simplicity is its flexibility.
+            </strong>
+          </p>
+          <p>
+            Enter recipes at whatever pace or level of detail you want.
+          </p>
+          <p>
+            Choose whether you want to upload a recipe card or enter
+            ingredients and directions manually.
+          </p>
+          <p>
+            Share recipes with friends and family but keep them private so you
+            can keep the secret ingredient a secret.
+          </p>
+          <p>
+            Organize recipes into collections when you add them or save
+            that for later.
+          </p>
+          <p>
+            Search by ingredients or tags to make finding a cake
+            recipe a piece of cake.
+          </p>
+      </section>
+      <section id="user-survey">
+        <div class="section-header">
+          <span>User Survey</span>
+          <img src="images\blue-circle.png" alt="User Survey" />
+        </div>
+          <p>
+            With <strong>29 survey participants</strong>, I was able to learn
+            a lot about how cloud storage apps are used now, likes, dislikes
+            and I could gauge interest in a recipe-focused app.
+            I asked which kinds of documents people would like to have
+            an app dedicated to, recipes being one them,
+            and <strong>38% of the users selected recipes</strong>.
+          </p>
+          <p>
+            Turns out a lot of people keep recipes in a box or drawer
+            and are interested in sharing recipes privately with family
+            and friends. The survey <strong>confirmed the direction of the app
+            </strong>and was extremely helpful in the creation and prioritization
+            of user stories.
+          </p>
+          <img id="survey-img" src="images\heirloom-survey.png"
+          alt="Heirloom Survey" />
+      </section>
+      <section id="competitive-analysis">
+        <div class="section-header">
+          <span>Competitive Analysis</span>
+          <img src="images\red-circle.png" alt="Competitive Analysis" />
+        </div>
+          <p>
+            I did a SWOT analysis of Dropbox, Pinterest
+            and Yummly which helped me find things I want to
+            mimic and things I want to fix in my own application.
+          </p>
+          <article>
+            <span class="comp-title">
+              Yummly
+            </span>
+            <span class="comp-body">
+              Quick and easy onboarding
+            </span>
+            <img id="yummly-img" src="images\heirloom-yummly.png"
+            alt="Yummly Onboarding Screen" />
+          </article>
+          <article>
+            <span class="comp-title">
+              Dropbox
+            </span>
+            <span class="comp-body">
+              Simple branding<br/>Efficient
+            </span>
+            <img id="dropbox-img" src="images\heirloom-dropbox.png"
+            alt="Dropbox Screen" />
+          </article>
+          <article>
+            <span class="comp-title">
+              Pinterest
+            </span>
+            <span class="comp-body">
+              Easy organization
+            </span>
+            <img id="pinterest-img-1" src="images\heirloom-pinterest-1.png"
+            alt="Pinterest Screen" />
+            <img id="pinterest-img-2" src="images\heirloom-pinterest-2.png"
+            alt="Pinterest Screen" />
+          </article>
+      </section>
+      <section id="user-flows">
+        <div class="section-header">
+          <span>User Flows</span>
+          <img src="images\blue-circle.png" alt="User Flows" />
+        </div>
+          <img id="flow-img-1" src="images\heirloom-flow-1.png"
+          alt="Heirloom Sharing Recipe User Flow" />
+          <img id="flow-img-2" src="images\heirloom-flow-2.png"
+          alt="Heirloom Adding Recipe User Flow" />
+          <p>
+            The onboarding flow was easy since I was able to reference
+            Yummly’s process. I also created flows for sharing, organizing
+            and adding recipes.
+          </p>
+          <p>
+            I used the user stories to determine what needs to be included
+            in these flows and utilized the other user flows I created for
+            Dropbox and Pinterest to guide me.
+          </p>
+          <img id="flow-img-3" src="images\heirloom-flow-3.png"
+          alt="Heirloom Onboarding User Flow" />
+          <img id="flow-img-4" src="images\heirloom-flow-4.png"
+          alt="Heirloom Modify Recipe User Flow" />
+      </section>
+      <section id="user-personas">
+        <div class="section-header">
+          <span>User Personas</span>
+          <img src="images\red-circle.png" alt="User Personas" />
+        </div>
+          <img id="persona-img" src="images\heirloom-personas.png"
+          alt="Heirloom User Personas" />
+          <p>
+            How would someone use this application for their family recipes
+            versus recipes found online?
+          </p>
+          <p>
+            What kind of information will this user need or want for a recipe?
+          </p>
+          <p>
+            What demographic is this being designed for?
+          </p>
+          <p>
+            Answering all these questions helped me determine different use
+            cases for this application which helped me create and prioritize
+            user stories and design the application itself.
+          </p>
+      </section>
+      <section id="user-stories">
+        <div class="section-header">
+          <span>User Stories</span>
+          <img src="images\blue-circle.png" alt="User Stories" />
+        </div>
+          <p>
+            From the survey and many iterations of testing,<br/>
+            I was given a lot of feedback on features people would<br/>
+            like to see in a recipes application.
+          </p>
+          <p>
+            I needed to sort through all these and determine what is<br/>
+            mandatory for the Minimum Viable Product, what would <br/>
+            be great to have and what can be in another round <br/>
+            of this application’s development.
+          </p>
+          <img id="stories-img" src="images\heirloom-stories.png"
+          alt="Heirloom User Stories" />
+      </section>
+      <section id="sketches">
+        <div class="section-header">
+          <span>Sketches</span>
+          <img src="images\red-circle.png" alt="Sketches" />
+        </div>
+        <img id="sketches-img" src="images\heirloom-sketches.png"
+        alt="Heirloom Sketches" />
+          <p>
+            I iterated many times on many of the screens.
+          </p>
+          <p>
+            Designing the <strong>“Add Recipe”</strong> screens were the toughest
+            to figure out. There needed to be room to add a lot
+            of recipe information in an easy and efficient way.
+          </p>
+      </section>
+      <section id="wireframes">
+        <div class="section-header">
+          <span>Wireframes</span>
+          <img src="images\blue-circle.png" alt="Wireframes" />
+        </div>
+          <p>
+            Going through the process of creating wireframes and testing them
+            put the user flows into perspective. After creating some screens
+            needed for adding a recipe, I realized that some screens should be
+            reordered and some things were never considered. For example,
+            having friends within the application to share recipes with worked
+            in the user flow, but when building the wireframes I realized this
+            concept was never fully developed.
+          </p>
+          <p>
+            The usability testing of the wireframe prototype revealed that the
+            processes for adding a recipe and organizing a collection were
+            confusing so this needed to be redesigned.
+          </p>
+          <img id="wireframes-img" src="images\heirloom-wireframes.png"
+          alt="Heirloom Wireframes" />
+      </section>
+      <section id="branding">
+        <div class="section-header">
+          <span>Branding</span>
+          <img src="images\red-circle.png" alt="Branding" />
+        </div>
+        <img id="branding-img" src="images\heirloom-branding.png"
+        alt="Heirloom Style Guide" />
+          <p>
+            Determining the font styles and the primary branding colors
+            greatly improved the efficiency of creating the mockups. It gave
+            me guidelines to begin my work with.  Once I could see how those
+            branding decisions affected the designs and prototype testing,
+            then I was able to tweak here and there. I ended up removing the
+            darkest color from the styleguide as that was never used, I
+            tweaked the icons and removed the logos that seemed like they
+            would never be utilized.
+          </p>
+          <p>
+            I also spent some time on logo design. The shape of the tomato
+            changed. Then I played with coloring and brand fonts. Then I tried
+            some different text placement. I ended with this logo which I am
+            pretty happy with as it is my first logo design.
+          </p>
+      </section>
+      <section id="hifi-1-2">
+        <div class="section-header">
+          <span>Mockups, Prototyping & Usability Testing</span>
+          <img src="images\blue-circle.png" alt="Mockups, Prototyping &
+          Usability Testing" />
+        </div>
+        <div>
+          <img id="hifi-img-1" src="images\heirloom-hifi-1.png"
+          alt="Heirloom High Fidelity Mockup Round One" />
+          <p>
+            The first mockup I created attempted to mimic an actual recipe
+            card. The feedback from the usability testing that most greatly
+            influenced the final design was how different the “add recipe”
+            screens were from the “view recipe” screens. Being able to
+            visualize the end-result when creating the recipe is extremely
+            important. Overall, the process of adding a recipe could be
+            simplified and the hierarchy of the home page also needed some
+            adjustment.
+          </p>
+        </div>
+        <div>
+          <img id="hifi-img-2" src="images\heirloom-hifi-2.png"
+          alt="Heirloom High Fidelity Mockup Round Two" />
+          <p>
+            Using the feedback from the design critique, I created a second
+            hi-fi mockup. It kept similar styling but laid out the information
+            on the page in a different way. The “view recipe” screen more
+            closely matched the “add recipe” screens, but the design was
+            still just a little too bland and the process of adding a recipe
+            needed some rework. Users needed to be guided through the process
+            and didn’t know where to begin adding a recipe.
+          </p>
+        </div>
+      </section>
+      <section id="hifi-3-4">
+        <div class="section-header">
+          <span>Mockups, Prototyping & Usability Testing</span>
+          <img src="images\red-circle.png" alt="Mockups, Prototyping &
+          Usability Testing" />
+        </div>
+        <div>
+          <img id="hifi-img-3" src="images\heirloom-hifi-3.png"
+          alt="Heirloom High Fidelity Mockup Round Three" />
+          <p>
+            The third mockup was a lot cleaner. The “add” and “view” recipe
+            screens matched exactly and users had a much easier time adding a r
+            ecipe. They knew where to begin and felt like this would be
+            extremely useful when actually cooking. The one thing that lacked
+            in this version was the branding. It was missing the “homey” and
+            “rustic” feel that the home page has. It was also missing some
+            information that users were asking for like Cook Time and Servings.
+          </p>
+        </div>
+        <div>
+          <img id="hifi-img-4" src="images\heirloom-hifi-4.png"
+          alt="Heirloom High Fidelity Mockup Round Four" />
+          <p>
+            The final mockup added the missing information, a “Print Recipe”
+            icon and adjusted some font and icon sizing. The designs were all
+            updated to make sure that branding was consistent and clean.
+          </p>
+        </div>
+      </section>
+      <section id="journey">
+        <div class="section-header">
+          <span>From Start To Finish</span>
+          <img src="images\blue-circle.png" alt="From Start To Finish" />
+        </div>
+        <div>
+          <img id="journey-img" src="images\heirloom-journey.png"
+          alt="Heirloom Recipe Page From Start to Finish" />
+          <p>
+            The journey was long, but a lot of progress was made from my
+            sketches to my wireframes to my fourth round of hi-fidelity
+            mockups. Here is a recipe page from the beginning to the end.
+          </p>
+        </div>
+      </section>
+      <section id="conclusion">
+        <div class="section-header">
+          <span>Conclusion</span>
+          <img src="images\red-circle.png" alt="Conclusion" />
+        </div>
+          <p>
+            Recipes are more complicated than I thought, but all the users who
+            tested were excited to use this application. I learned a lot about
+            the importance of simplicity, consistency and hierarchy when
+            designing an application. Also, finding inspiration from existing
+            sites and designs is key for having a design that matches
+            modern trends.
+          </p>
+          <button type="button">View Prototype</button>
+      </section>
+    </main>
+    <footer>
+      <div class="email">
+        <span>
+          Let's Chat!
+        </span>
+        <a href="mailto:hey@emmak.design">
+          hey@emmak.design
+        </a>
+      </div>
+      <ul class="mdl-mini-footer__link-list">
+        <li>
+          <a href="https://www.linkedin.com/in/emmakwiatkowski/">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/emmakwiat">
+            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/EmmaRyn">
+            <i class="fa fa-github-square" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
