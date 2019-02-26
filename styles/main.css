@@ -1,53 +1,156 @@
-body {
-  padding-bottom: 5rem;
+:root {
+  --navy: #1A4A68;
+  --teal: #00ADB5;
+  --red: #FC3C3C;
+  --yellow: #F8B500;
+  --offwhite: #FFF4E0;
 }
 
-header {
-  background: url(../images/hero-image.jpg) center / cover;
-  height: 60vh;
-  justify-content: center;
+body {
+  padding-bottom: 5rem;
+  font-size: 1.2rem;
+}
+
+nav {
+  display: inline;
+}
+
+#mobile-menu {
+  float: left;
+  position: absolute;
+  top: 1.2rem;
+  left: 1.2rem;
+}
+
+@media screen and (min-width: 500px) {
+  #mobile-menu, footer.email > h2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  #desktop-menu, #contact {
+    display: none;
+  }
+}
+
+button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid var(--navy);
+  border-radius: 100px;
+  color: var(--navy);
+  width: 20rem;
+  line-height: 3.5rem;
+  font-size: 1.2rem;
+  font-family: 'Comfortaa', sans-serif;
+  margin: 1.5rem auto;
+}
+
+#homepage {
+  color: var(--offwhite);
+  font-family: 'Comfortaa', sans-serif;
+  font-style: light;
   text-align: center;
 }
 
 h1 {
-  color: hsla(0, 0%, 95%, 0.9);
-  font-weight: bold;
-  font-family: Sofia, Comfortaa, sans-serif;
+  font-family: 'Sofia', sans-serif;
+  font-size: 4rem;
+  padding: 2rem 0rem;
+}
+
+h2 {
+  font-family: 'Sofia', sans-serif;
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+
+#logo {
+  margin: 5rem 0 2rem 0;
+  width: 100px;
+  height: auto;
 }
 
 .slogan {
-  color: hsla(0, 0%, 100%, 0.7);
-  font-weight: lighter;
-  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 300;
+  text-align: center;
+  width: 18rem;
+  margin: auto;
 }
 
-section {
-  max-width: 900px;
+#hey {
+  padding-top: 3rem;
 }
 
-.project-description {
-  padding-left: 0;
+svg {
+  position: relative;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  overflow: visible;
 }
 
-.project img {
+header svg {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+header {
+  justify-content: center;
+  text-align: center;
+  height: 40rem;
+  z-index: 2;
+}
+
+.slogan {
+  font-style: normal;
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#homepage main {
   width: 100%;
 }
 
-footer.mdl-mini-footer {
+section#project-1 svg {
+  margin-top: -30rem;
+  z-index: -2;
+}
+
+#project-1-story {
+  padding: 2rem 0;
+  font-weight: normal;
+}
+
+#project-1 button {
+  background-color: var(--navy);
+  color: var(--offwhite);
+}
+
+section#nav-contact svg {
+  margin-top: -35rem;
+  z-index: -3;
+}
+
+#home-nav {
+  padding: 2.5rem 0;
+}
+
+footer {
+  background-color: var(--red);
   bottom: 0;
+  height: 10rem;
   padding: 0.5rem;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: -5;
 }
 
-footer.mdl-mini-footer > ul {
-  margin: auto;
+footer > ul {
   font-size: 2rem;
-}
-
-@media screen and (max-width: 1024px) {
-  header.mdl-layout__header {
-    display: flex;
-  }
+  margin: auto;
 }

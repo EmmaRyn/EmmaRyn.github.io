@@ -3,18 +3,22 @@
   <head>
     <title>Portfolio | Emma Kwiatkowski</title>
     <meta name="viewport" content="width=device-width, inital-scale=1">
-
+    <!-- Reset Browser Styles -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin|Comfortaa:300,400|Sofia" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
+    <div id="homepage" class="container">
     <header>
+      <img id="mobile-menu" width="50px" height="50px" src="images\light-menu.svg">
       <nav>
         <img id="logo" src="images\ek_logo.png" alt="logo"/>
-        <ul>
+        <ul id="desktop-menu">
           <li>ABOUT</li>
           <li>WORK</li>
           <li>RESUME</li>
@@ -22,62 +26,70 @@
       </nav>
       <h1>Emma K</h1>
       <p class="slogan">
-          UX designer with a<br/>
-          frontend development background<br/>
+          UX designer with a
+          frontend development background
           in Raleigh, NC
       </p>
       <p id="hey">
         Hey!
       </p>
+      <svg viewBox="0 0 375 563" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 481.053L187.5 562.86L375 481.053V460.869H0V481.053Z" fill="#FFF4E0"/>
+        <path d="M375 -0.000244141H-1.52588e-05L-9.53674e-06 461.707L187.5 542.86L375 461.707V-0.000244141Z" fill="#1A4A68"/>
+      </svg>
     </header>
     <main>
       <section id="project-1">
-          <article class="project-circle">
-            <div >
-            <h2>Heirloom</h2>
-            <p id="project-1-roles">
-              RESEARCH | DESIGN | TESTING
-            </p>
-            <p id="project-1-story">
-              “As a person, I want to store and <br/>
-              share personal recipes.”
-            </p>
-            <button type="button">View Project</button>
-            <img src="images\red-circle.png" alt="Heirloom" />
-          </article>
+        <h2>Heirloom</h2>
+        <p id="project-1-roles">
+          RESEARCH | DESIGN | TESTING
+        </p>
+        <p id="project-1-story">
+          “As a person, I want to store and <br/>
+          share personal recipes.”
+        </p>
+        <button type="button">View Project</button>
+        <svg viewBox="0 0 375 563" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 481.053L187.5 562.86L375 481.053V460.869H0V481.053Z" fill="#FFF4E0"/>
+          <path d="M375 -0.000244141H-1.52588e-05L-9.53674e-06 461.707L187.5 542.86L375 461.707V-0.000244141Z" fill="#00ADB5"/>
+        </svg>
       </section>
       <section id="nav-contact">
-          <article id="circle-nav">
+          <div id="home-nav">
             <ul>
               <li>
-                Learn More About Me
-                <img src="images\blue-circle.png" alt="Learn More About Me" />
+                <button type="button">Learn More About Me</button>
               </li>
               <li>
-                View My Resume
-                <img src="images\blue-circle.png" alt="View My Resume" />
+                <button type="button">View My Resume</button>
               </li>
               <li>
-                See More Work
-                <img src="images\blue-circle.png" alt="See More Work" />
+                <button type="button">See More Work</button>
               </li>
             </ul>
-          </article>
-          <article id="contact">
+          </div>
+          <div id="contact">
             <h2>Let's Chat</h2>
             <p>
               <a href="mailto:hey@emmak.design">
                 hey@emmak.design
               </a>
             </p>
-          </article>
+          </div>
+          <svg viewBox="0 0 375 563" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 481.053L187.5 562.86L375 481.053V460.869H0V481.053Z" fill="#FFF4E0"/>
+            <path d="M375 -0.000244141H-1.52588e-05L-9.53674e-06 461.707L187.5 542.86L375 461.707V-0.000244141Z" fill="#F8B500"/>
+          </svg>
       </section>
     </main>
-    <footer class="mdl-mini-footer">
+    <footer>
       <div class="email">
+        <h2>Let's Chat</h2>
+        <p>
           <a href="mailto:hey@emmak.design">
             hey@emmak.design
           </a>
+        </p>
       </div>
       <ul>
         <li>
@@ -97,5 +109,6 @@
         </li>
       </ul>
     </footer>
+  </div>
   </body>
 </html>
