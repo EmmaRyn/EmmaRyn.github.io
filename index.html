@@ -6,7 +6,7 @@
     <!-- Reset Browser Styles -->
     <link rel="stylesheet" href="styles/reset.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Cabin|Comfortaa:300,400|Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700|Comfortaa:300,400,700|Sofia" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Styles -->
@@ -15,76 +15,84 @@
   <body>
     <div id="homepage" class="container">
     <header>
-      <img id="mobile-menu" width="50px" height="50px" src="images\light-menu.svg">
+      <svg viewBox="0 0 376 581" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M375.672 454.88L0.669535 454.88L0.668274 454.886V496.783L180.027 576.858L188.181 580.498L196.335 576.857L375.672 496.786V454.88ZM94.5267 494.88L188.18 536.692L281.827 494.88L94.5267 494.88Z" fill="#FFF4E0"/>
+        <path d="M375.668 0.497803H0.668274L0.66828 476.782L188.168 560.498L375.668 476.782V0.497803Z" fill="#1A4A68"/>
+      </svg>
       <nav>
-        <img id="logo" src="images\ek_logo.png" alt="logo"/>
         <ul id="desktop-menu">
           <li>ABOUT</li>
           <li>WORK</li>
           <li>RESUME</li>
         </ul>
+        <img id="logo" src="images\ek_logo.png" alt="logo"/>
       </nav>
-      <h1>Emma K</h1>
-      <p class="slogan">
-          UX designer with a
-          frontend development background
-          in Raleigh, NC
-      </p>
-      <p id="hey">
-        Hey!
-      </p>
-      <svg viewBox="0 0 375 563" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 481.053L187.5 562.86L375 481.053V460.869H0V481.053Z" fill="#FFF4E0"/>
-        <path d="M375 -0.000244141H-1.52588e-05L-9.53674e-06 461.707L187.5 542.86L375 461.707V-0.000244141Z" fill="#1A4A68"/>
-      </svg>
+      <div id="homepage-hero">
+        <h1>Emma K</h1>
+        <p class="slogan">
+            UX designer with a
+            frontend development background
+            in Raleigh, NC
+        </p>
+        <p id="hey">
+          Hey!
+        </p>
+      </div>
     </header>
     <main>
       <section id="project-1">
-        <h2>Heirloom</h2>
-        <p id="project-1-roles">
-          RESEARCH | DESIGN | TESTING
-        </p>
-        <p id="project-1-story">
-          “As a person, I want to store and <br/>
-          share personal recipes.”
-        </p>
-        <button type="button">View Project</button>
-        <svg viewBox="0 0 375 563" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 481.053L187.5 562.86L375 481.053V460.869H0V481.053Z" fill="#FFF4E0"/>
-          <path d="M375 -0.000244141H-1.52588e-05L-9.53674e-06 461.707L187.5 542.86L375 461.707V-0.000244141Z" fill="#00ADB5"/>
+        <svg viewBox="0 0 376 581" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M375.672 454.88L0.669535 454.88L0.668274 454.886V496.783L180.027 576.858L188.181 580.498L196.335 576.857L375.672 496.786V454.88ZM94.5267 494.88L188.18 536.692L281.827 494.88L94.5267 494.88Z" fill="#FFF4E0"/>
+          <path d="M375.668 0.497803H0.668274L0.66828 476.782L188.168 560.498L375.668 476.782V0.497803Z" fill="#00ADB5"/>
         </svg>
+        <div id="project-info" class="section-body">
+          <h2>Heirloom</h2>
+          <p id="project-1-roles">
+            RESEARCH | DESIGN | TESTING
+          </p>
+          <p id="project-1-story">
+            “As a person, I want to store and share personal recipes.”
+          </p>
+          <button type="button" onclick="window.location.href='project.html';">
+            View Project
+          </button>
+        </div>
       </section>
       <section id="nav-contact">
-          <div id="home-nav">
+        <svg viewBox="0 0 376 581" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M375.672 454.88L0.669535 454.88L0.668274 454.886V496.783L180.027 576.858L188.181 580.498L196.335 576.857L375.672 496.786V454.88ZM94.5267 494.88L188.18 536.692L281.827 494.88L94.5267 494.88Z" fill="#FFF4E0"/>
+          <path d="M375.668 0.497803H0.668274L0.66828 476.782L188.168 560.498L375.668 476.782V0.497803Z" fill="#F8B500"/>
+        </svg>
+          <div id="home-nav" class="section-body">
             <ul>
-              <li>
+              <li id="circle-button-1">
                 <button type="button">Learn More About Me</button>
+                <div id="circle-nav-rect-1" class="circle-nav-rect"></div>
               </li>
-              <li>
+              <li id="circle-button-2">
                 <button type="button">View My Resume</button>
+                <div id="circle-nav-rect-2" class="circle-nav-rect"></div>
               </li>
-              <li>
+              <li id="circle-button-3">
                 <button type="button">See More Work</button>
+                <div id="circle-nav-rect-3" class="circle-nav-rect"></div>
               </li>
             </ul>
           </div>
           <div id="contact">
-            <h2>Let's Chat</h2>
+            <h3 class="bold">Let's Chat!</h3>
             <p>
               <a href="mailto:hey@emmak.design">
                 hey@emmak.design
               </a>
             </p>
           </div>
-          <svg viewBox="0 0 375 563" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 481.053L187.5 562.86L375 481.053V460.869H0V481.053Z" fill="#FFF4E0"/>
-            <path d="M375 -0.000244141H-1.52588e-05L-9.53674e-06 461.707L187.5 542.86L375 461.707V-0.000244141Z" fill="#F8B500"/>
-          </svg>
       </section>
     </main>
     <footer>
+      <div id="footer-container">
       <div class="email">
-        <h2>Let's Chat</h2>
+        <h3>Let's Chat!</h3>
         <p>
           <a href="mailto:hey@emmak.design">
             hey@emmak.design
@@ -108,6 +116,7 @@
           </a>
         </li>
       </ul>
+    </div>
     </footer>
   </div>
   </body>
