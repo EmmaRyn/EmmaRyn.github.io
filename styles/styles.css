@@ -2,7 +2,7 @@
   --navy: #1A4A68;
   --teal: #00ADB5;
   --red: #FC3C3C;
-  --yellow: #F8B768;
+  --yellow: #F8B500;
   --offwhite: #FFF4E0;
   --alternating: #FFEBC8;
 }
@@ -30,6 +30,7 @@ nav {
 
 nav ul {
   display: flex;
+  font-size: 1.2rem;
   list-style: none;
   margin: 1rem auto;
   width: fit-content;
@@ -141,16 +142,13 @@ h3 {
   }
 }
 
-svg {
-  position: relative;
-  left: 0;
-  width: 100vw;
-  overflow: hidden;
-}
-
 header svg {
+  height: 586px;
+  left: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
+  width: 100vw;
 }
 
 #homepage, #project-1-container {
@@ -173,22 +171,21 @@ main {
   width: 100vw;
 }
 
-#homepage svg {
-  height: 586px;
-  margin-top: -5px;
+#project-1 {
+  background-color: var(--teal);
 }
 
-#project-1 {
-  background-color: var(--yellow);
+#homepage main section {
+  border-bottom: 20px solid var(--offwhite);
+  height: 560px;
   position: relative;
   z-index: -2;
 }
 
 #nav-contact {
-  background-color: var(--red);
-  margin-top: -50px;
+  background-color: var(--yellow);
   position: relative;
-  z-index: -3;
+  z-index: 1;
 }
 
 #project-info, #home-nav {
@@ -201,7 +198,12 @@ main {
 }
 
 #home-nav {
+  height: 100%;
   margin-top: 10rem;
+}
+
+#nav-contact ul {
+  height: 100%;
 }
 
 #project-1-story, #project-1-roles {
@@ -222,6 +224,16 @@ main {
   margin-top: 3rem;
 }
 
+.circle-nav-rect {
+  position: absolute;
+  background-color: var(--offwhite);
+  width: 20px;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  margin-left: 90px;
+}
+
 footer {
   background-color: var(--red);
   bottom: 0;
@@ -240,8 +252,8 @@ footer .email > div {
   padding-bottom: 0.6rem;
 }
 
-footer .email > a {
-  font-size: 1.2rem;
+footer .email a {
+  font-size: 1.4rem;
 }
 
 footer ul {
@@ -271,15 +283,22 @@ footer ul > li > a {
       color: var(--offwhite);
       height: 300px;
       line-height: 2rem;
-      margin: 5rem;
-      margin-left: auto;
-      padding: 50px;
+      margin: 8rem 5rem auto auto;
+      padding: 40px;
       width: 300px;
   }
 
   #project-1 button {
     margin-top: 1rem;
     width: 200px;
+  }
+
+  #vine {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: -5;
   }
 
   #home-nav {
@@ -292,10 +311,10 @@ footer ul > li > a {
     background-color: var(--navy);
     border: 20px solid var(--offwhite);
     color: var(--offwhite);
-    height: 180px;
+    height: 200px;
     line-height: 2rem;
-    padding: 10px;
-    width: 180px;
+    padding: 20px;
+    width: 200px;
   }
 
   #home-nav ul {
@@ -307,13 +326,18 @@ footer ul > li > a {
   }
 
   #circle-button-2 {
-    margin-top: 270px;
-    margin-left: -100px;
+    margin-top: 300px;
+    margin-left: -50px;
   }
 
   #circle-button-3 {
     margin-top: 120px;
-    margin-left: -10px;
+    margin-left: -50px;
+  }
+
+  #circle-nav-rect-4 {
+    right: 0;
+    margin-right: 260px;
   }
 
   #nav-contact {
@@ -329,6 +353,12 @@ footer ul > li > a {
     width: 35%;
   }
 
+  @media screen and (min-width:768px) and (max-width: 875px) {
+    #contact {
+      margin-top: 400px;
+    }
+  }
+
   #contact a {
     color: var(--navy);
   }
@@ -339,6 +369,12 @@ footer ul > li > a {
 
   footer ul {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  img#vine, .circle-nav-rect {
+    display: none;
   }
 }
 
@@ -378,6 +414,7 @@ footer ul > li > a {
   font-family: Cabin, sans-serif;
   font-size: 1.3rem;
   font-weight: lighter;
+  height: auto;
   line-height: 2rem;
   text-align: left;
 }
@@ -411,7 +448,7 @@ footer ul > li > a {
   }
 
   .section-body {
-    margin: 2rem 5rem;
+    margin: 2rem 5rem 0rem 5rem;
   }
 
   .caption {
@@ -449,17 +486,16 @@ footer ul > li > a {
 }
 
 #project-1-container > header {
-  height: 80vh;
   z-index: 3;
 }
 
-#project-1-container > header > svg {
-  height: 75vh;
+#heirloom-main {
+  position: inherit;
+  z-index: -2;
 }
 
-#heirloom-main {
-  margin-top: -15vh;
-  z-index: 2;
+#roles-deliv-tools {
+  border: none;
 }
 
 #roles-deliv-tools, #conclusion {
@@ -470,7 +506,6 @@ footer ul > li > a {
   background-color: var(--offwhite);
   margin: 0 auto;
   padding: 7rem 5rem 2rem 5rem;
-  position: static;
   width: 65%;
 }
 
@@ -611,4 +646,53 @@ li.comp-body {
   padding: 3rem;
   position: static;
   width: 65%;
+}
+
+@media screen and (min-width: 786px) {
+  #heirloom-main button {
+    margin-left: 0;
+  }
+
+  #roles-deliv-tools-container, #solution .section-body {
+    display: flex;
+    width: 100%;
+  }
+
+  #problem .section-body {
+    display: inline-grid;
+    margin-right: 0;
+    width: 40%;
+  }
+
+  #problem-body {
+    margin: 0 auto;
+    width: 80%;
+  }
+
+  #problem-description {
+    border-bottom: none;
+    border-right: 2px solid var(--yellow);
+    margin-left: 0;
+    padding-right: 50px;
+  }
+
+  #solution .section-body {
+    border-top: 2px solid var(--yellow);
+    margin: 2rem auto;
+    padding-top: 20px;
+    max-width: 90%;
+  }
+
+  #solution .section-body li {
+    padding: 0 2rem;
+    width: 20%;
+  }
+
+  #user-survey .section-body {
+    max-width: 350px;
+  }
+
+  #survey-img-lg {
+    width: 50% !important;
+  }
 }
