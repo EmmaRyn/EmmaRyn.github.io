@@ -653,9 +653,10 @@ li.comp-body {
     margin-left: 0;
   }
 
-  #roles-deliv-tools-container, #solution .section-body {
+  #roles-deliv-tools-container {
     display: flex;
-    width: 100%;
+    padding: 7rem 0rem;
+    width: 70%;
   }
 
   #problem .section-body {
@@ -678,9 +679,11 @@ li.comp-body {
 
   #solution .section-body {
     border-top: 2px solid var(--yellow);
+    display: flex;
     margin: 2rem auto;
     padding-top: 20px;
     max-width: 90%;
+    width: 100%;
   }
 
   #solution .section-body li {
@@ -692,7 +695,80 @@ li.comp-body {
     max-width: 350px;
   }
 
-  #survey-img-lg {
-    width: 50% !important;
+  #user-flows > div, #user-survey > div {
+    display: inline-block;
+    width: 50%;
   }
+
+  #comp-container {
+    display: flex;
+    margin: 0 auto 5rem auto;
+    text-align: center;
+    width: 90%;
+  }
+
+  #comp-container ul {
+    margin: 0 0;
+    padding: 0 40px;
+  }
+
+  #dropbox, #pinterest, #persona-1, #persona-2 {
+    border-bottom: none;
+  }
+
+  #pinterest, #persona-2 {
+    border-left: 2px solid var(--yellow);
+    border-right: 2px solid var(--yellow);
+  }
+
+  #user-flows > div {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+  }
+
+  #personas-description {
+    margin-right: 20px;
+  }
+
+  #personas-image {
+    display: inline;
+    width: 70%;
+  }
+
+  #personas-description, #persona-1, #persona-2, #persona-3 {
+    display: inline-block;
+    padding: 0 20px;
+    vertical-align: top;
+    width: 18%;
+  }
+
+  #personas-description button {
+    width: -webkit-fill-available;
+  }
+
+  #user-stories > div {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #stories-description {
+    margin-right: 50px;
+    width: 350px;
+  }
+
+  #stories-image {
+    margin-bottom: 20px;
+    width: 45%;
+  }
+
+  #conclusion {
+    border-bottom: 20px solid var(--offwhite);
+    border-top: 20px solid var(--offwhite);
+  }
+
+  #conclusion .section-body {
+    padding: 5rem;
+  }
+
 }
