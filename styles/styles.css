@@ -710,6 +710,7 @@ li.comp-body {
   #comp-container ul {
     margin: 0 0;
     padding: 0 40px;
+    width: 30%;
   }
 
   #dropbox, #pinterest, #persona-1, #persona-2 {
