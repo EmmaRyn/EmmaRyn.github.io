@@ -66,7 +66,6 @@ p.article-title {
 
 div, ul, img {
   position: relative;
-  z-index: 2;
 }
 
 .bold, .article-title {
@@ -125,23 +124,6 @@ h3 {
   width: 28rem;
 }
 
-/* Homepage Styles */
-#logo {
-  margin: 2rem 0 0 0;
-  width: 80px;
-  height: auto;
-}
-
-@media screen and (max-width: 767px) {
-  #contact {
-    display: none;
-  }
-
-  #red-circle {
-    display: none;
-  }
-}
-
 header svg {
   height: 586px;
   left: 0;
@@ -149,25 +131,85 @@ header svg {
   position: absolute;
   top: 0;
   width: 100vw;
+  z-index: 1;
 }
 
-#homepage, #project-1-container {
+.menu, .logo, .hero {
+  z-index: 2;
+}
+
+.logo {
+  margin: 2rem 0 0 0;
+  width: 80px;
+  height: auto;
+}
+
+.container {
   color: var(--offwhite);
   font-family: 'Comfortaa', sans-serif;
   font-weight: 300;
   text-align: center;
 }
 
+main section {
+  z-index: 0;
+}
+
+footer {
+  background-color: var(--red);
+  bottom: 0;
+  color: var(--offwhite) !important;
+  position: static;
+  width: 100vw;
+}
+
+.footer-container {
+  background-color: var(--red);
+  padding: 8rem 2rem;
+}
+
+footer .email > div {
+  font-size: 1.7rem;
+  padding-bottom: 0.6rem;
+}
+
+footer .email a {
+  font-size: 1.4rem;
+}
+
+footer ul {
+  margin-top: 3rem;
+}
+
+footer ul > li {
+  display: inline-block;
+  height: auto;
+  padding: 1.5rem;
+}
+
+footer ul > li > a {
+  font-size: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+  .desktop-image {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-image {
+    display: none !important;
+  }
+}
+
+/* Homepage Styles */
 #hey {
   padding-top: 6rem;
 }
 
-header {
+#homepage header {
   background-color: var(--teal);
-  width: 100vw;
-}
-
-main {
   width: 100vw;
 }
 
@@ -179,13 +221,11 @@ main {
   border-bottom: 20px solid var(--offwhite);
   height: 560px;
   position: relative;
-  z-index: -2;
 }
 
 #nav-contact {
   background-color: var(--yellow);
   position: relative;
-  z-index: 1;
 }
 
 #project-info, #home-nav {
@@ -194,7 +234,6 @@ main {
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 4;
 }
 
 #home-nav {
@@ -234,45 +273,8 @@ main {
   margin-left: 90px;
 }
 
-footer {
-  background-color: var(--red);
-  bottom: 0;
-  color: var(--offwhite) !important;
-  position: static;
-  width: 100vw;
-}
-
-#footer-container {
-  background-color: var(--red);
-  padding: 8rem 2rem;
-}
-
-footer .email > div {
-  font-size: 1.7rem;
-  padding-bottom: 0.6rem;
-}
-
-footer .email a {
-  font-size: 1.4rem;
-}
-
-footer ul {
-  margin-top: 3rem;
-}
-
-footer ul > li {
-  display: inline-block;
-  height: auto;
-  padding: 1.5rem;
-}
-
-footer ul > li > a {
-  font-size: 5rem;
-}
-
 @media screen and (min-width: 768px) {
-
-  #logo {
+  .logo {
     float: left;
   }
 
@@ -353,12 +355,6 @@ footer ul > li > a {
     width: 35%;
   }
 
-  @media screen and (min-width:768px) and (max-width: 875px) {
-    #contact {
-      margin-top: 400px;
-    }
-  }
-
   #contact a {
     color: var(--navy);
   }
@@ -372,19 +368,29 @@ footer ul > li > a {
   }
 }
 
+@media screen and (min-width:768px) and (max-width: 875px) {
+  #contact {
+    margin-top: 400px;
+  }
+}
+
 @media screen and (max-width: 767px) {
+  #contact {
+    display: none;
+  }
+
   img#vine, .circle-nav-rect {
     display: none;
   }
 }
 
-/* Project Styles */
-#project-1-container {
+/* Secondary Page Styles */
+.secondary-container {
   background-color: var(--offwhite);
   color: var(--navy);
 }
 
-#project-1-container h2 {
+.secondary-container h2 {
   background-color: var(--red);
   color: var(--offwhite);
   font-family: 'Comfortaa', sans-serif;
@@ -396,7 +402,7 @@ footer ul > li > a {
   text-transform: uppercase;
 }
 
-#project-1-container h3 {
+.secondary-container h3 {
   background-color: var(--teal);
   color: var(--offwhite);
   font-family: 'Comfortaa', sans-serif;
@@ -405,12 +411,12 @@ footer ul > li > a {
   text-align: center;
 }
 
-#project-1-container .slogan {
+.secondary-container .slogan {
   font-size: 1.4rem;
   line-height: 2rem;
 }
 
-#project-1-container section {
+.secondary-container section {
   font-family: Cabin, sans-serif;
   font-size: 1.3rem;
   font-weight: lighter;
@@ -424,7 +430,7 @@ footer ul > li > a {
   max-width: 450px;
 }
 
-#project-1-container section img {
+.secondary-container section img {
   display: block;
   margin: 0 auto;
   padding-bottom: 3rem;
@@ -442,7 +448,7 @@ footer ul > li > a {
 }
 
 @media screen and (min-width: 768px){
-  #project-1-container h3 {
+  .secondary-container h3 {
     left: 0;
     width: 375px;
   }
@@ -473,25 +479,9 @@ footer ul > li > a {
   }
 }
 
-@media screen and (min-width: 768px) {
-  #survey-img-sm {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  #survey-img-lg {
-    display: none !important;
-  }
-}
-
-#project-1-container > header {
-  z-index: 3;
-}
-
+/* Project Styles */
 #heirloom-main {
   position: inherit;
-  z-index: -2;
 }
 
 #roles-deliv-tools {
@@ -505,7 +495,7 @@ footer ul > li > a {
 #roles-deliv-tools-container {
   background-color: var(--offwhite);
   margin: 0 auto;
-  padding: 7rem 5rem 2rem 5rem;
+  padding: 10rem 5rem 2rem 5rem;
   width: 65%;
 }
 
@@ -772,4 +762,90 @@ li.comp-body {
     padding: 5rem;
   }
 
+}
+
+/* About Styles */
+#about-container > header > svg {
+  margin-top: -100px;
+}
+
+#about-container header {
+  background-color: var(--teal);
+  height: 80vh;
+}
+
+#about-container section {
+  display: block;
+  font-family: Cabin, sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  height: auto;
+  line-height: 2rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#about-main img {
+  border: 1px solid var(--yellow);
+  border-radius: 50%;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 300px;
+  width: 50%;
+}
+
+#about-1 .section-body, #about-2 .section-body {
+  padding: 10px;
+  max-width: 400px;
+}
+
+#about-1 .section-body {
+  margin: auto 0 auto auto;
+}
+
+#about-1 img, #about-2 img {
+  margin: 4rem auto;
+}
+
+#about-2 .section-body {
+  margin: auto auto auto 0;
+}
+
+#about-3-title {
+  margin-bottom: 0 !important;
+}
+
+#about-text-3 {
+  background-color: var(--offwhite);
+  margin: 0 auto;
+  padding: 3rem;
+  position: static;
+  width: 65%;
+}
+
+#about-3 {
+  background-color: var(--teal);
+}
+
+@media screen and (min-width: 786px) {
+  #about-container section {
+    display: flex;
+  }
+
+  #about-1 .section-body, #about-2 .section-body {
+    width: 70%;
+  }
+
+  #about-1 img, #about-2 img {
+    margin: auto;
+  }
+
+  #about-3 {
+    border-bottom: 20px solid var(--offwhite);
+    border-top: 20px solid var(--offwhite);
+  }
+
+  #about-3 .section-body {
+    padding: 5rem;
+  }
 }
