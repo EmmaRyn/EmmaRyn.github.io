@@ -18,8 +18,8 @@ html {
 }
 
 body {
-  padding-bottom: 5rem;
   font-size: 2rem;
+  width: 100vw;
 }
 
 nav {
@@ -80,7 +80,7 @@ div, ul, img {
   text-transform: uppercase;
 }
 
-button {
+.button {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid var(--navy);
   border-radius: 100px;
@@ -90,10 +90,11 @@ button {
   font-size: 1.4rem;
   margin: 1rem auto 4rem auto;
   padding: 1.8rem 0px;
+  text-align: center;
   width: 250px;
 }
 
-button:hover {
+.button:hover {
   background-color: var(--navy);
   color: var(--offwhite);
 }
@@ -210,14 +211,13 @@ footer ul > li > a {
 
 #homepage header {
   background-color: var(--teal);
-  width: 100vw;
 }
 
 #project-1 {
   background-color: var(--teal);
 }
 
-#homepage main section {
+#homepage main section, #work-container main section {
   border-bottom: 20px solid var(--offwhite);
   height: 560px;
   position: relative;
@@ -257,7 +257,7 @@ footer ul > li > a {
   padding: 2rem 0;
 }
 
-#project-1 button {
+#project-1 .button {
   background-color: var(--navy);
   color: var(--offwhite);
   margin-top: 3rem;
@@ -270,7 +270,7 @@ footer ul > li > a {
   top: 0;
   z-index: -1;
   height: 100%;
-  margin-left: 90px;
+  margin-left: 85px;
 }
 
 @media screen and (min-width: 768px) {
@@ -290,14 +290,16 @@ footer ul > li > a {
       width: 300px;
   }
 
-  #project-1 button {
+  #project-1 .button {
     margin-top: 1rem;
     width: 200px;
   }
 
   #vine {
+    margin: auto 0;
+    max-height: 500px;
     position: absolute;
-    width: 100vw;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: -5;
@@ -309,14 +311,20 @@ footer ul > li > a {
     width: 50%;
   }
 
-  #home-nav button {
+  #home-nav .button {
     background-color: var(--navy);
     border: 20px solid var(--offwhite);
+    border-radius: 100%;
     color: var(--offwhite);
-    height: 200px;
+    height: 130px;
     line-height: 2rem;
-    padding: 20px;
-    width: 200px;
+    padding: 10px;
+    width: 130px;
+  }
+
+  #home-nav .button > div {
+    margin-top: 25%;
+    padding: inherit;
   }
 
   #home-nav ul {
@@ -384,7 +392,26 @@ footer ul > li > a {
   }
 }
 
+/* Work Styles */
+#work-container header svg {
+  margin-top: -90px;
+}
+
+#work-container header a {
+  color: var(--navy);
+}
+
+#work-container {
+  background-color: var(--offwhite);
+  color: var(--navy);
+}
+
+
 /* Secondary Page Styles */
+.secondary-container header a {
+  color: var(--navy);
+}
+
 .secondary-container {
   background-color: var(--offwhite);
   color: var(--navy);
@@ -478,6 +505,94 @@ footer ul > li > a {
     width: 100% !important;
   }
 }
+
+
+/* About Styles */
+#about-container > header > svg {
+  margin-top: -100px;
+}
+
+#about-container header {
+  background-color: var(--teal);
+  height: 80vh;
+}
+
+#about-container section {
+  display: block;
+  font-family: Cabin, sans-serif;
+  font-size: 1.3rem;
+  font-weight: lighter;
+  height: auto;
+  line-height: 2rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#about-main img {
+  border: 1px solid var(--yellow);
+  border-radius: 50%;
+  padding: 20px;
+  margin: 2rem auto;
+  max-width: 300px;
+  width: 50%;
+}
+
+#about-1 .section-body, #about-2 .section-body {
+  padding: 10px;
+  max-width: 400px;
+}
+
+#about-1 .section-body {
+  margin: auto 0 auto auto;
+}
+
+#about-1 img, #about-2 img {
+  margin: 4rem auto;
+}
+
+#about-2 .section-body {
+  margin: auto auto auto 0;
+}
+
+#about-3-title {
+  margin-bottom: 0 !important;
+}
+
+#about-text-3 {
+  background-color: var(--offwhite);
+  margin: 0 auto;
+  padding: 3rem;
+  position: static;
+  width: 65%;
+}
+
+#about-3 {
+  background-color: var(--teal);
+}
+
+@media screen and (min-width: 786px) {
+  #about-container section {
+    display: flex;
+  }
+
+  #about-1 .section-body, #about-2 .section-body {
+    width: 70%;
+  }
+
+  #about-1 img, #about-2 img {
+    margin: auto;
+  }
+
+  #about-3 {
+    border-bottom: 20px solid var(--offwhite);
+    border-top: 20px solid var(--offwhite);
+  }
+
+  #about-3 .section-body {
+    padding: 5rem;
+  }
+}
+
 
 /* Project Styles */
 #heirloom-main {
@@ -609,6 +724,10 @@ li.comp-body {
   padding: 0.5rem 0;
 }
 
+#survey-images, #stories-image {
+  margin-top: 20px;
+}
+
 #hifi .article-title {
   border-top: 2px solid var(--yellow);
   max-width: 200px;
@@ -639,7 +758,7 @@ li.comp-body {
 }
 
 @media screen and (min-width: 786px) {
-  #heirloom-main button {
+  #heirloom-main .button {
     margin-left: 0;
   }
 
@@ -683,6 +802,7 @@ li.comp-body {
 
   #user-survey .section-body {
     max-width: 350px;
+    vertical-align: top;
   }
 
   #user-flows > div, #user-survey > div {
@@ -734,7 +854,7 @@ li.comp-body {
     width: 18%;
   }
 
-  #personas-description button {
+  #personas-description .button {
     width: -webkit-fill-available;
   }
 
@@ -762,90 +882,4 @@ li.comp-body {
     padding: 5rem;
   }
 
-}
-
-/* About Styles */
-#about-container > header > svg {
-  margin-top: -100px;
-}
-
-#about-container header {
-  background-color: var(--teal);
-  height: 80vh;
-}
-
-#about-container section {
-  display: block;
-  font-family: Cabin, sans-serif;
-  font-size: 1.3rem;
-  font-weight: lighter;
-  height: auto;
-  line-height: 2rem;
-  margin: 0 auto;
-  text-align: left;
-}
-
-#about-main img {
-  border: 1px solid var(--yellow);
-  border-radius: 50%;
-  padding: 20px;
-  margin: 2rem auto;
-  max-width: 300px;
-  width: 50%;
-}
-
-#about-1 .section-body, #about-2 .section-body {
-  padding: 10px;
-  max-width: 400px;
-}
-
-#about-1 .section-body {
-  margin: auto 0 auto auto;
-}
-
-#about-1 img, #about-2 img {
-  margin: 4rem auto;
-}
-
-#about-2 .section-body {
-  margin: auto auto auto 0;
-}
-
-#about-3-title {
-  margin-bottom: 0 !important;
-}
-
-#about-text-3 {
-  background-color: var(--offwhite);
-  margin: 0 auto;
-  padding: 3rem;
-  position: static;
-  width: 65%;
-}
-
-#about-3 {
-  background-color: var(--teal);
-}
-
-@media screen and (min-width: 786px) {
-  #about-container section {
-    display: flex;
-  }
-
-  #about-1 .section-body, #about-2 .section-body {
-    width: 70%;
-  }
-
-  #about-1 img, #about-2 img {
-    margin: auto;
-  }
-
-  #about-3 {
-    border-bottom: 20px solid var(--offwhite);
-    border-top: 20px solid var(--offwhite);
-  }
-
-  #about-3 .section-body {
-    padding: 5rem;
-  }
 }
