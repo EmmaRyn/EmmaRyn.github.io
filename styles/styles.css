@@ -225,6 +225,7 @@ footer ul > li > a {
 
 #nav-contact {
   background-color: var(--yellow);
+  height: 460px !important;
   position: relative;
 }
 
@@ -352,6 +353,7 @@ footer ul > li > a {
 
   #nav-contact {
     display: flex;
+    height: 560px !important;
   }
 
   #contact {
@@ -542,16 +544,13 @@ footer ul > li > a {
   max-width: 400px;
 }
 
-#about-1 .section-body {
-  margin: auto 0 auto auto;
-}
-
 #about-1 img, #about-2 img {
   margin: 4rem auto;
+  margin-top: 0;
 }
 
-#about-2 .section-body {
-  margin: auto auto auto 0;
+#about-1 .section-body, #about-2 .section-body {
+  margin: 0 auto;
 }
 
 #about-3-title {
@@ -576,6 +575,7 @@ footer ul > li > a {
   }
 
   #about-1 .section-body, #about-2 .section-body {
+    margin: auto;
     width: 70%;
   }
 
