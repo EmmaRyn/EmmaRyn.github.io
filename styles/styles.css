@@ -574,7 +574,7 @@ footer ul > li > a {
     display: flex;
   }
 
-  #about-1 .section-body, #about-2 .section-body {
+  #about-1, #about-2 {
     margin: auto;
     width: 70%;
   }
