@@ -30,7 +30,7 @@ nav {
 
 nav ul {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   list-style: none;
   margin: 1rem auto;
   width: fit-content;
@@ -54,6 +54,11 @@ nav ul > li {
 a {
   color: var(--offwhite);
   text-decoration: none;
+}
+
+nav a:hover {
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 0.5rem;
 }
 
 p {
@@ -101,7 +106,7 @@ div, ul, img {
 
 h1 {
   font-family: 'Sofia', sans-serif;
-  font-size: 5.7rem;
+  font-size: 8rem;
   padding: 3rem 0;
 }
 
@@ -123,6 +128,10 @@ h3 {
   margin: auto;
   text-align: center;
   width: 28rem;
+}
+
+header {
+  height: 500px;
 }
 
 header svg {
@@ -242,6 +251,10 @@ footer ul > li > a {
   margin-top: 10rem;
 }
 
+#home-nav a.button:hover {
+  border-color: var(--red);
+}
+
 #nav-contact ul {
   height: 100%;
 }
@@ -262,6 +275,11 @@ footer ul > li > a {
   background-color: var(--navy);
   color: var(--offwhite);
   margin-top: 3rem;
+}
+
+#project-1 .button:hover {
+  background-color: var(--yellow);
+  color: var(--navy);
 }
 
 .circle-nav-rect {
@@ -286,7 +304,7 @@ footer ul > li > a {
       color: var(--offwhite);
       height: 300px;
       line-height: 2rem;
-      margin: 8rem 5rem auto auto;
+      margin: 8rem 10rem auto auto;
       padding: 40px;
       width: 300px;
   }
@@ -297,6 +315,7 @@ footer ul > li > a {
   }
 
   #vine {
+    bottom: 0;
     margin: auto 0;
     max-height: 500px;
     position: absolute;
@@ -348,7 +367,7 @@ footer ul > li > a {
 
   #circle-nav-rect-4 {
     right: 0;
-    margin-right: 260px;
+    margin-right: 28rem;
   }
 
   #nav-contact {
@@ -395,10 +414,6 @@ footer ul > li > a {
 }
 
 /* Work Styles */
-#work-container header svg {
-  margin-top: -90px;
-}
-
 #work-container header a {
   color: var(--navy);
 }
@@ -410,8 +425,13 @@ footer ul > li > a {
 
 
 /* Secondary Page Styles */
-.secondary-container header a {
+.secondary-container nav a {
   color: var(--navy);
+}
+
+.secondary-container nav a:hover {
+  border-bottom: 2px solid var(--teal);
+  padding-bottom: 0.5rem;
 }
 
 .secondary-container {
@@ -441,8 +461,9 @@ footer ul > li > a {
 }
 
 .secondary-container .slogan {
-  font-size: 1.4rem;
-  line-height: 2rem;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  width: 35rem;
 }
 
 .secondary-container section {
@@ -510,13 +531,9 @@ footer ul > li > a {
 
 
 /* About Styles */
-#about-container > header > svg {
-  margin-top: -100px;
-}
-
 #about-container header {
   background-color: var(--teal);
-  height: 80vh;
+  height: 600px;
 }
 
 #about-container section {
