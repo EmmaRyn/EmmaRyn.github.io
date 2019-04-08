@@ -234,11 +234,11 @@ footer ul > li > a {
 
 #nav-contact {
   background-color: var(--yellow);
-  height: 460px !important;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
 
-#project-info, #home-nav {
+#project-info{
   left: 0;
   margin: 15rem auto;
   position: absolute;
@@ -248,7 +248,7 @@ footer ul > li > a {
 
 #home-nav {
   height: 100%;
-  margin-top: 10rem;
+  margin: auto;
 }
 
 #home-nav a.button:hover {
@@ -257,6 +257,8 @@ footer ul > li > a {
 
 #nav-contact ul {
   height: 100%;
+  margin: auto;
+  margin-top: 50%;
 }
 
 #project-1-story, #project-1-roles {
@@ -326,9 +328,7 @@ footer ul > li > a {
   }
 
   #home-nav {
-    margin: 0;
-    margin-left: 5%;
-    width: 50%;
+    margin: auto;
   }
 
   #home-nav .button {
@@ -347,8 +347,9 @@ footer ul > li > a {
     padding: inherit;
   }
 
-  #home-nav ul {
+  #nav-contact ul {
     display: flex;
+    margin-top: 0;
   }
 
   #circle-button-1 {
@@ -370,18 +371,10 @@ footer ul > li > a {
     margin-right: 28rem;
   }
 
-  #nav-contact {
-    display: flex;
-    height: 560px !important;
-  }
-
   #contact {
     color: var(--navy);
-    margin: 150px auto 0px auto;
-    position: absolute;
-    right: 0;
+    margin: auto;
     text-align: left;
-    width: 35%;
   }
 
   #contact a {
@@ -456,6 +449,7 @@ footer ul > li > a {
   color: var(--offwhite);
   font-family: 'Comfortaa', sans-serif;
   font-size: 1.7rem;
+  margin-bottom: 70px;
   padding: 1.7rem 0;
   text-align: center;
 }
@@ -472,6 +466,7 @@ footer ul > li > a {
   font-weight: lighter;
   height: auto;
   line-height: 2rem;
+  padding-bottom: 70px;
   text-align: left;
 }
 
@@ -483,7 +478,9 @@ footer ul > li > a {
 .secondary-container section img {
   display: block;
   margin: 0 auto;
-  padding-bottom: 3rem;
+  max-width: 800px;
+  padding-bottom: 6rem;
+  padding-top: 6rem;
   width: 90%;
 }
 
@@ -501,6 +498,16 @@ footer ul > li > a {
   .secondary-container h3 {
     left: 0;
     width: 375px;
+  }
+
+  .secondary-container h3::after {
+    border-style: solid;
+    border-width: 31px 0 30px 40px;
+    border-color: transparent transparent transparent var(--teal);
+    content: "";
+    left: 375px;
+    margin-top: -20px;
+    position: absolute;
   }
 
   .section-body {
@@ -557,7 +564,7 @@ footer ul > li > a {
 }
 
 #about-1 .section-body, #about-2 .section-body {
-  padding: 10px;
+  padding: 20px;
   max-width: 400px;
 }
 
@@ -584,6 +591,7 @@ footer ul > li > a {
 
 #about-3 {
   background-color: var(--teal);
+  padding-bottom: 0;
 }
 
 @media screen and (min-width: 786px) {
@@ -593,6 +601,7 @@ footer ul > li > a {
 
   #about-1, #about-2 {
     margin: auto;
+    padding-top:80px;
     width: 70%;
   }
 
@@ -618,6 +627,7 @@ footer ul > li > a {
 
 #roles-deliv-tools {
   border: none;
+  padding-bottom: 0;
 }
 
 #roles-deliv-tools, #conclusion {
@@ -666,16 +676,10 @@ footer ul > li > a {
   padding-bottom: 1rem;
 }
 
-img#dropbox-logo {
-  height: auto;
-  max-width: 70px;
-  padding-bottom: 0rem !important;
-}
-
-img#pinterest-logo, img#yummly-logo {
-  height: auto;
-  max-width: 50px;
-  padding-bottom: 0rem !important;
+.comp-logo {
+  height: 50px;
+  padding-bottom: 1rem !important;
+  width: auto !important;
 }
 
 #competitive-analysis > ul > li {
@@ -683,18 +687,24 @@ img#pinterest-logo, img#yummly-logo {
   text-align: center;
 }
 
-.comp-title {
+li.comp-title {
+  display: grid;
   font-size: 1.7rem;
   font-weight: bold;
+  justify-content: center;
   line-height: 2.5rem;
 }
 
 li.comp-body {
+  display: grid;
+  justify-content: center;
+  min-height: 40px;
   padding-bottom: 3rem !important;
+  text-align: center;
 }
 
-#dropbox-img {
-  max-width: 225px;
+#comp-container img.comp-img {
+  padding-top: 0;
 }
 
 #dropbox, #pinterest, #persona-1, #persona-2 {
@@ -725,7 +735,7 @@ li.comp-body {
   font-family: 'Comfortaa', sans-serif;
   margin: 0 auto;
   text-align: center;
-  width: 75%;
+  width: 90%;
 }
 
 #stories-image-header {
@@ -734,11 +744,16 @@ li.comp-body {
   font-size: 1.8rem;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  padding-left: 2rem;
   text-transform: uppercase;
 }
 
 #stories-image li {
-  padding: 0.5rem 0;
+  padding: 0.5rem 2rem;
+}
+
+#stories-image li:nth-of-type(odd) {
+  font-weight: bold;
 }
 
 #survey-images, #stories-image {
@@ -822,6 +837,11 @@ li.comp-body {
     vertical-align: top;
   }
 
+  #survey-images {
+    padding-top: 0;
+    width: 60%;
+  }
+
   #user-flows > div, #user-survey > div {
     display: inline-block;
     width: 50%;
@@ -835,7 +855,7 @@ li.comp-body {
   }
 
   #comp-container ul {
-    margin: 0 0;
+    margin: 0;
     padding: 0 40px;
     width: 30%;
   }
@@ -844,7 +864,7 @@ li.comp-body {
     border-bottom: none;
   }
 
-  #pinterest, #persona-2 {
+  #pinterest {
     border-left: 2px solid var(--yellow);
     border-right: 2px solid var(--yellow);
   }
@@ -855,20 +875,34 @@ li.comp-body {
     vertical-align: top;
   }
 
+  #flows-img > img {
+    padding-top: 2rem;
+  }
+
+  .persona {
+    float: right;
+    width: 25%;
+    max-width: 250px;
+  }
+
+  #persona-2 {
+    padding: 0 30px;
+  }
+
   #personas-description {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 
   #personas-image {
-    display: inline;
-    width: 70%;
+    display: inline-flex;
+    justify-content: center;
   }
 
-  #personas-description, #persona-1, #persona-2, #persona-3 {
+  #personas-description {
     display: inline-block;
     padding: 0 20px;
     vertical-align: top;
-    width: 18%;
+    width: 22%;
   }
 
   #personas-description .button {
@@ -881,18 +915,43 @@ li.comp-body {
   }
 
   #stories-description {
-    margin-right: 50px;
+    margin-right: 10%;
     width: 350px;
   }
 
   #stories-image {
     margin-bottom: 20px;
-    width: 45%;
+    max-width: 500px;
+    text-align: left;
+    width: 40%;
+  }
+
+  #sketches .section-body, #wireframes .section-body {
+    margin-bottom: 70px;
+  }
+
+  #branding > div {
+    display: inline-block;
+  }
+
+  #branding-description {
+    vertical-align: top;
+  }
+
+  #branding-img {
+    max-width: 700px;
+    padding-top: 0;
+  }
+
+  #hifi > div.section-body {
+    margin-bottom: 50px;
+    margin-top: 70px;
   }
 
   #conclusion {
     border-bottom: 20px solid var(--offwhite);
     border-top: 20px solid var(--offwhite);
+    padding-bottom: 0;
   }
 
   #conclusion .section-body {
