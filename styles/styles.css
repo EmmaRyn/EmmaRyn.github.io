@@ -685,6 +685,39 @@ footer ul > li > a {
   padding-bottom: 1rem;
 }
 
+#survey-stats {
+  display: table;
+  margin-top: 80px;
+}
+
+.stat {
+  display: inline-grid;
+  margin-bottom: 30px;
+  margin-left: 2%;
+  margin-right: 2%;
+  text-align: center;
+  width: 45%;
+}
+
+.stat-title {
+  color: var(--yellow);
+  font-size: 4rem;
+}
+
+#survey-stats img.stat-title-img {
+  max-width: 70px;
+  padding: 0;
+  height: auto;
+}
+
+.stat-header-text {
+  font-size: 2rem;
+}
+
+.stat > div {
+  padding-bottom: 1rem;
+}
+
 .comp-logo {
   height: 50px;
   padding-bottom: 1rem !important;
@@ -850,13 +883,9 @@ li.comp-body {
     vertical-align: top;
   }
 
-  #survey-images {
+  #survey-stats {
     padding-top: 0;
     width: 60%;
-  }
-
-  #survey-img-lg {
-    padding-top: 2rem;
   }
 
   #user-flows > div.section-body, #user-survey > div.section-body {
