@@ -106,7 +106,7 @@ div, ul, img {
 
 h1 {
   font-family: 'Sofia', sans-serif;
-  font-size: 8rem;
+  font-size: 7rem;
   padding: 3rem 0;
 }
 
@@ -210,6 +210,10 @@ footer ul > li > a {
 @media screen and (min-width: 768px) {
   .mobile-image {
     display: none !important;
+  }
+
+  h1 {
+    font-size: 8rem;
   }
 }
 
@@ -484,9 +488,14 @@ footer ul > li > a {
   width: 90%;
 }
 
+.image-area {
+  padding-bottom: 3rem;
+}
+
 .caption {
   font-size: 1.2rem;
-  margin: 0.5rem 1.5rem 0rem 1.5rem;
+  margin: 1rem auto;
+  width: 90%;
 }
 
 .img-with-caption > img {
@@ -734,7 +743,7 @@ li.comp-body {
 #stories-image {
   font-family: 'Comfortaa', sans-serif;
   margin: 0 auto;
-  text-align: center;
+  text-align: left;
   width: 90%;
 }
 
@@ -775,6 +784,10 @@ li.comp-body {
 #hifi-conclusion {
   border-top: 2px solid var(--yellow);
   padding: 2rem 0;
+}
+
+#conclusion {
+  padding-bottom: 0;
 }
 
 #conclusion-title {
@@ -842,9 +855,13 @@ li.comp-body {
     width: 60%;
   }
 
-  #user-flows > div, #user-survey > div {
+  #survey-img-lg {
+    padding-top: 2rem;
+  }
+
+  #user-flows > div.section-body, #user-survey > div.section-body {
     display: inline-block;
-    width: 50%;
+    width: 30%;
   }
 
   #comp-container {
@@ -922,7 +939,6 @@ li.comp-body {
   #stories-image {
     margin-bottom: 20px;
     max-width: 500px;
-    text-align: left;
     width: 40%;
   }
 
@@ -940,7 +956,7 @@ li.comp-body {
 
   #branding-img {
     max-width: 700px;
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   #hifi > div.section-body {
@@ -951,7 +967,6 @@ li.comp-body {
   #conclusion {
     border-bottom: 20px solid var(--offwhite);
     border-top: 20px solid var(--offwhite);
-    padding-bottom: 0;
   }
 
   #conclusion .section-body {
