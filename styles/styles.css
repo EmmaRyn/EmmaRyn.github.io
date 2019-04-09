@@ -884,8 +884,14 @@ li.comp-body {
   }
 
   #survey-stats {
+    margin-top: 0;
     padding-top: 0;
-    width: 60%;
+    width: 100%;
+  }
+
+  #survey-images {
+    display: inline-block;
+    width: 50%;
   }
 
   #user-flows > div.section-body, #user-survey > div.section-body {
