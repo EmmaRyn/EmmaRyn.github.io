@@ -494,7 +494,8 @@ footer ul > li > a {
 
 .caption {
   font-size: 1.2rem;
-  margin: 1rem auto;
+  line-height: 1.7rem;
+  margin: 1rem;
   width: 90%;
 }
 
@@ -528,10 +529,6 @@ footer ul > li > a {
 
   .section-body {
     margin: 2rem 5rem 0rem 5rem;
-  }
-
-  .caption {
-    margin: 1rem 5rem;
   }
 
   .image-area {
@@ -737,19 +734,24 @@ footer ul > li > a {
   text-align: center;
 }
 
+#competitive-analysis .content-area {
+  display: block;
+}
+
 li.comp-title {
   display: grid;
   font-size: 1.7rem;
   font-weight: bold;
   justify-content: center;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  padding-bottom: 1rem;
 }
 
 li.comp-body {
-  display: grid;
+  font-size: 1.3rem;
   justify-content: center;
-  min-height: 40px;
-  padding-bottom: 3rem !important;
+  min-height: 150px;
+  padding-bottom: 1rem !important;
   text-align: center;
 }
 
@@ -909,8 +911,7 @@ li.comp-body {
 
   #comp-container ul {
     margin: 0;
-    padding: 0 40px;
-    width: 30%;
+    padding: 0 20px;
   }
 
   #dropbox, #pinterest, #persona-1, #persona-2 {
