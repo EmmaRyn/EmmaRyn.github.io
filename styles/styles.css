@@ -11,7 +11,7 @@ html {
   font-size: 62.5%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   html {
     font-size: 70%;
   }
@@ -40,7 +40,7 @@ nav ul > li {
   padding: 0 2rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   nav {
     width: 80%;
   }
@@ -201,13 +201,13 @@ footer ul > li > a {
   font-size: 5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 799px) {
   .desktop-image {
     display: none !important;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .mobile-image {
     display: none !important;
   }
@@ -218,12 +218,16 @@ footer ul > li > a {
 }
 
 /* Homepage Styles */
-#hey {
-  padding-top: 6rem;
+#homepage header {
+  background-color: var(--navy);
 }
 
-#homepage header {
-  background-color: var(--teal);
+#homepage-hero {
+  padding-top: 20px;
+}
+
+#homepage h1 {
+  padding-top: 0;
 }
 
 #project-1 {
@@ -298,7 +302,7 @@ footer ul > li > a {
   margin-left: 85px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .logo {
     float: left;
   }
@@ -394,18 +398,14 @@ footer ul > li > a {
   }
 }
 
-@media screen and (min-width:768px) and (max-width: 875px) {
+@media screen and (min-width:800px) and (max-width: 875px) {
   #contact {
     margin-top: 400px;
   }
 }
 
-@media screen and (max-width: 767px) {
-  #contact {
-    display: none;
-  }
-
-  img#vine, .circle-nav-rect {
+@media screen and (max-width: 799px) {
+  #contact, .circle-nav-rect {
     display: none;
   }
 }
@@ -466,10 +466,10 @@ footer ul > li > a {
 
 .secondary-container section {
   font-family: Cabin, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: lighter;
   height: auto;
-  line-height: 2rem;
+  line-height: 2.3rem;
   padding-bottom: 70px;
   text-align: left;
 }
@@ -503,7 +503,7 @@ footer ul > li > a {
   padding-top: 2rem;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 800px){
   .secondary-container h3 {
     left: 0;
     width: 375px;
@@ -519,13 +519,19 @@ footer ul > li > a {
     position: absolute;
   }
 
+  .content-area {
+    display: flex;
+    margin: auto;
+    max-width: 1500px;
+    width: 80%;
+  }
+
   .section-body {
     margin: 2rem 5rem 0rem 5rem;
   }
 
   .caption {
-    margin: 1rem 0rem;
-    width: 100%;
+    margin: 1rem 5rem;
   }
 
   .image-area {
@@ -545,7 +551,6 @@ footer ul > li > a {
   }
 }
 
-
 /* About Styles */
 #about-container header {
   background-color: var(--teal);
@@ -555,7 +560,7 @@ footer ul > li > a {
 #about-container section {
   display: block;
   font-family: Cabin, sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: lighter;
   height: auto;
   line-height: 2rem;
@@ -570,6 +575,10 @@ footer ul > li > a {
   margin: 2rem auto;
   max-width: 300px;
   width: 50%;
+}
+
+#about-1, #about-2 {
+  max-width: 1000px;
 }
 
 #about-1 .section-body, #about-2 .section-body {
@@ -603,7 +612,7 @@ footer ul > li > a {
   padding-bottom: 0;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 799px) {
   #about-container section {
     display: flex;
   }
@@ -656,7 +665,6 @@ footer ul > li > a {
 }
 
 #roles-deliv-tools-container li {
-  font-size: 1.3rem;
   line-height: 1.5rem;
   margin: 3px auto;
   padding-top: 0.6rem;
@@ -753,10 +761,14 @@ li.comp-body {
   border-bottom: 2px solid var(--yellow);
 }
 
+.persona, #comp-container .section-body {
+  margin: 0 auto;
+  max-width: 300px;
+}
+
 #personas-image {
   font-family: 'Comfortaa', sans-serif;
   margin: 0 auto;
-  width: 60%;
 }
 
 #personas-image img {
@@ -766,6 +778,7 @@ li.comp-body {
 }
 
 #personas-image li {
+  font-size: 1.4rem;
   padding-bottom: 3rem;
 }
 
@@ -835,7 +848,7 @@ li.comp-body {
   width: 65%;
 }
 
-@media screen and (min-width: 786px) {
+@media screen and (min-width: 800px) {
   #heirloom-main .button {
     margin-left: 0;
   }
@@ -846,15 +859,13 @@ li.comp-body {
     width: 70%;
   }
 
+  #problem .content-area {
+    max-width: 1000px;
+  }
+
   #problem .section-body {
     display: inline-grid;
     margin-right: 0;
-    width: 40%;
-  }
-
-  #problem-body {
-    margin: 0 auto;
-    width: 80%;
   }
 
   #problem-description {
@@ -878,11 +889,6 @@ li.comp-body {
     width: 20%;
   }
 
-  #user-survey .section-body {
-    max-width: 350px;
-    vertical-align: top;
-  }
-
   #survey-stats {
     margin-top: 0;
     padding-top: 0;
@@ -892,11 +898,6 @@ li.comp-body {
   #survey-images {
     display: inline-block;
     width: 50%;
-  }
-
-  #user-flows > div.section-body, #user-survey > div.section-body {
-    display: inline-block;
-    width: 30%;
   }
 
   #comp-container {
@@ -921,28 +922,28 @@ li.comp-body {
     border-right: 2px solid var(--yellow);
   }
 
-  #user-flows > div {
-    display: inline-block;
-    width: 40%;
-    vertical-align: top;
-  }
-
   #flows-img > img {
     padding-top: 2rem;
   }
 
   .persona {
-    float: right;
-    width: 25%;
-    max-width: 250px;
+    max-width: 300px;
+  }
+
+  .persona-info {
+    min-height: 100px;
+  }
+
+  .persona-quote {
+    min-height: 180px;
+  }
+
+  .persona-goals, .persona-frustrations  {
+    min-height: 180px;
   }
 
   #persona-2 {
     padding: 0 30px;
-  }
-
-  #personas-description {
-    margin-right: 50px;
   }
 
   #personas-image {
@@ -954,27 +955,10 @@ li.comp-body {
     display: inline-block;
     padding: 0 20px;
     vertical-align: top;
-    width: 22%;
-  }
-
-  #personas-description .button {
-    width: -webkit-fill-available;
-  }
-
-  #user-stories > div {
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  #stories-description {
-    margin-right: 10%;
-    width: 350px;
   }
 
   #stories-image {
     margin-bottom: 20px;
-    max-width: 500px;
-    width: 40%;
   }
 
   #sketches .section-body, #wireframes .section-body {
@@ -983,10 +967,6 @@ li.comp-body {
 
   #branding > div {
     display: inline-block;
-  }
-
-  #branding-description {
-    vertical-align: top;
   }
 
   #branding-img {

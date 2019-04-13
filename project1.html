@@ -34,8 +34,8 @@
       </svg>
       <nav>
         <ul class="menu">
-          <li><a href="about.html">ABOUT</a></li>
           <li><a href="work.html">WORK</a></li>
+          <li><a href="about.html">ABOUT</a></li>
           <li><a href="files/Emma-Kwiatkowski-Resume.pdf" target="_blank">RESUME</li>
         </ul>
         <a href="index.html">
@@ -56,15 +56,16 @@
         <div id="roles-deliv-tools-container">
           <ul id="roles">
             <li class="list-title">Roles</li>
-            <li>Research</li>
-            <li>Design</li>
-            <li>Testing</li>
+            <li>User Researcher</li>
+            <li>Visual Designer</li>
+            <li>Prototyper</li>
+            <li>Usability Tester</li>
           </ul>
           <ul id="deliv">
             <li class="list-title">Deliverables</li>
             <li>Sketches</li>
             <li>Wireframes</li>
-            <li>Hi-Fidelity Mockups for Desktop and Mobiles</li>
+            <li>Hi-Fidelity Mockups for Desktop and Mobile</li>
             <li>Style Guide</li>
             <li>Logos</li>
           </ul>
@@ -80,7 +81,7 @@
       <h2 class="section-title">Project Definition</h2>
       <section id="problem">
         <h3 class="section-header">The Problem</h3>
-        <div id="problem-body">
+        <div class="content-area">
           <div id="problem-description" class="section-body">
             <p class="article-title">Here's The Scoop</p>
             <p>There are so many sources to get recipes like websites, friends,
@@ -126,266 +127,316 @@
       </section>
       <section id="solution">
         <h3 class="section-header">The Solution</h3>
-        <ul class="section-body">
-          <li>
-            Enter recipes at whatever pace or level of detail you want
-          </li>
-          <li>
-            Choose whether you want to upload a recipe card or enter
-            ingredients and directions manually
-          </li>
-          <li>
-            Organize recipes into collections when you add them or save
-            that for later
-          </li>
-          <li>
-            Search by ingredients or tags to make finding a cake
-            recipe a piece of cake
-          </li>
-          <li>
-            Share recipes with friends and family but keep them private so you
-            can keep the secret ingredient a secret
-          </li>
-        </ul>
+        <div class="content-area">
+          <ul class="section-body">
+            <li>
+              Enter recipes at whatever pace or level of detail you want
+            </li>
+            <li>
+              Choose whether you want to upload a recipe card or enter
+              ingredients and directions manually
+            </li>
+            <li>
+              Organize recipes into collections when you add them or save
+              that for later
+            </li>
+            <li>
+              Search by ingredients or tags to make finding a cake
+              recipe a piece of cake
+            </li>
+            <li>
+              Share recipes with friends and family but keep them private so you
+              can keep the secret ingredient a secret
+            </li>
+          </ul>
+        </div>
         <img id="solution-img" src="images/heirloom-solution.png"
-          alt="Heirloom Solution" />
+            alt="Heirloom Solution" />
       </section>
       <h2 class="section-title">Research & Discovery</h2>
       <section id="user-survey">
         <h3 class="section-header">User Survey</h3>
-        <div class="section-body">
-          <p>
-            With 29 survey participants, I was able to learn a lot about how
-            cloud storage apps are used now, what people like and dislike
-            about them and I could gauge interest in a recipe-focused app.
-          </p>
-          <p>
-            This confirmed the direction of the app and was extremely helpful
-            in the creation and prioritization of user stories.
-          </p>
-          <a class="button" href="https://forms.gle/3CN97viunJGGNkTg8"
-          target="_blank">Take The Survey</a>
-        </div>
-        <div id="survey-images">
-          <ul id="survey-stats">
-            <li class="stat">
-              <div class="stat-title">96%</div>
-              <div>use cloud storage/organization apps</div>
-            </li>
-            <li class="stat">
-              <div class="stat-title">81%</div>
-              <div>use cloud apps primarily for content storage</div>
-            </li>
-            <li class="stat">
-              <div class="stat-title"><img src="images/thumbs-up.png" alt="Likes" class="stat-title-img"></div>
-              <div>Access from any location</div>
-              <div>Files backed up remotely</div>
-              <div>Easy to use</div>
-            </li>
-            <li class="stat">
-              <div class="stat-title"><img src="images/thumbs-down.png" alt="Dislikes" class="stat-title-img"></div>
-              <div>Privacy/security</div>
-              <div>Limited storage space</div>
-              <div>Not good for organization</div>
-            </li>
-            <li class="stat">
-              <div class="stat-title stat-header-text">CURRENT RECIPE STORAGE</div>
-              <div>80% drawer/box</div>
-              <div>40% browser bookmark</div>
-              <div>30% pinterest board</div>
-            </li>
-            <li class="stat">
-              <div class="stat-title stat-header-text">CURRENT RECIPE SOURCE</div>
-              <div>100% web</div>
-              <div>90% written recipe</div>
-              <div>80% cookbook</div>
-              <div>50% magazines</div>
-              <div>20% food-delivery subscription services</div>
-            </li>
-          </ul>
+        <div class="content-area">
+          <div class="section-body">
+            <p>
+              With 29 survey participants, I was able to learn a lot about how
+              cloud storage apps are used now, what people like and dislike
+              about them and I could gauge interest in a recipe-focused app.
+            </p>
+            <p>
+              This confirmed the direction of the app and was extremely helpful
+              in the creation and prioritization of user stories.
+            </p>
+            <a class="button" href="https://forms.gle/3CN97viunJGGNkTg8"
+            target="_blank">Take The Survey</a>
+            <a class="button" href="files/heirloom-survey-results.pdf"
+            target="_blank">View The Results</a>
+          </div>
+          <div id="survey-images">
+            <ul id="survey-stats">
+              <li class="stat">
+                <div class="stat-title">96%</div>
+                <div>use cloud storage/organization apps</div>
+              </li>
+              <li class="stat">
+                <div class="stat-title">81%</div>
+                <div>use cloud apps primarily for content storage</div>
+              </li>
+              <li class="stat">
+                <div class="stat-title"><img src="images/thumbs-up.png" alt="Likes" class="stat-title-img"></div>
+                <div>Access from any location</div>
+                <div>Files backed up remotely</div>
+                <div>Easy to use</div>
+              </li>
+              <li class="stat">
+                <div class="stat-title"><img src="images/thumbs-down.png" alt="Dislikes" class="stat-title-img"></div>
+                <div>Privacy/security</div>
+                <div>Limited storage space</div>
+                <div>Not good for organization</div>
+              </li>
+              <li class="stat">
+                <div class="stat-title stat-header-text">CURRENT RECIPE STORAGE</div>
+                <div>80% drawer/box</div>
+                <div>40% browser bookmark</div>
+                <div>30% pinterest board</div>
+              </li>
+              <li class="stat">
+                <div class="stat-title stat-header-text">CURRENT RECIPE SOURCE</div>
+                <div>100% web</div>
+                <div>90% written recipe</div>
+                <div>80% cookbook</div>
+                <div>50% magazines</div>
+                <div>20% food-delivery subscription services</div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="competitive-analysis">
         <h3 class="section-header">Competitive Analysis</h3>
-        <p class="section-body">
-          I did a SWOT analysis of Dropbox, Pinterest
-          and Yummly which helped me find things I want to
-          mimic and things I want to fix in my own application.
-        </p>
-        <div id="comp-container">
-          <ul id="dropbox" class="section-body">
-            <li>
-              <img class="comp-logo" src="images/heirloom-dropbox-logo.png"
-              alt="Dropbox Logo" />
-            </li>
-            <li class="comp-title">
-              Dropbox
-            </li>
-            <li class="comp-body">
-              Simple branding<br/>Efficient
-            </li>
-            <li>
-              <img id="dropbox-img" class="comp-img" src="images/heirloom-dropbox.png"
-              alt="Dropbox Screen" />
-            </li>
-          </ul>
-          <ul id="pinterest" class="section-body">
-            <li>
-              <img class="comp-logo" src="images/heirloom-pinterest-logo.png"
-              alt="Pinterest Logo" />
-            </li>
-            <li class="comp-title">
-              Pinterest
-            </li>
-            <li class="comp-body">
-              Easy organization
-            </li>
-            <li>
-              <img id="pinterest-img-1" class="comp-img" src="images/heirloom-pinterest-1.png"
-              alt="Pinterest Screen" />
-            </li>
-            <li>
-              <img id="pinterest-img-2" class="comp-img" src="images/heirloom-pinterest-2.png"
-              alt="Pinterest Screen" />
-            </li>
-          </ul>
-          <ul id="yummly" class="section-body">
-            <li>
-              <img class="comp-logo" src="images/heirloom-yummly-logo.png"
-              alt="Yummly Logo" />
-            </li>
-            <li class="comp-title">
-              Yummly
-            </li>
-            <li class="comp-body">
-              Quick and easy onboarding
-            </li>
-            <li>
-              <img id="yummly-img" class="comp-img" src="images/heirloom-yummly.png"
-              alt="Yummly Onboarding Screen" />
-            </li>
-          </ul>
+        <div class="content-area">
+          <p class="section-body">
+            I did a SWOT analysis of Dropbox, Pinterest
+            and Yummly which helped me find things I want to
+            mimic and things I want to fix in my own application.
+          </p>
+          <div id="comp-container">
+            <ul id="dropbox" class="section-body">
+              <li>
+                <img class="comp-logo" src="images/heirloom-dropbox-logo.png"
+                alt="Dropbox Logo" />
+              </li>
+              <li class="comp-title">
+                Dropbox
+              </li>
+              <li class="comp-body">
+                Simple branding<br/>Efficient
+              </li>
+              <li>
+                <img id="dropbox-img" class="comp-img" src="images/heirloom-dropbox.png"
+                alt="Dropbox Screen" />
+              </li>
+            </ul>
+            <ul id="pinterest" class="section-body">
+              <li>
+                <img class="comp-logo" src="images/heirloom-pinterest-logo.png"
+                alt="Pinterest Logo" />
+              </li>
+              <li class="comp-title">
+                Pinterest
+              </li>
+              <li class="comp-body">
+                Easy organization
+              </li>
+              <li>
+                <img id="pinterest-img-1" class="comp-img" src="images/heirloom-pinterest-1.png"
+                alt="Pinterest Screen" />
+              </li>
+              <li>
+                <img id="pinterest-img-2" class="comp-img" src="images/heirloom-pinterest-2.png"
+                alt="Pinterest Screen" />
+              </li>
+            </ul>
+            <ul id="yummly" class="section-body">
+              <li>
+                <img class="comp-logo" src="images/heirloom-yummly-logo.png"
+                alt="Yummly Logo" />
+              </li>
+              <li class="comp-title">
+                Yummly
+              </li>
+              <li class="comp-body">
+                Quick and easy onboarding
+              </li>
+              <li>
+                <img id="yummly-img" class="comp-img" src="images/heirloom-yummly.png"
+                alt="Yummly Onboarding Screen" />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="user-flows">
         <h3 class="section-header">User Flows</h3>
-        <div id="flows-description" class="section-body">
-          <p>
-            The onboarding flow was easy since I was able to reference
-            Yummly’s process. I also created flows for sharing, organizing
-            and adding recipes.
-          </p>
-          <p>
-            I used the user stories to determine what needs to be included
-            in these flows and utilized the other user flows I created for
-            Dropbox and Pinterest to guide me.
-          </p>
-          <a class="button" href="files/heirloom-userflows.pdf" target="_blank">See All User Flows</a>
-        </div>
-        <div id="flows-img" class="img-with-caption">
-          <img src="images/heirloom-flow.png" alt="Heirloom Adding Recipe User Flow" />
-          <p class="caption">Original user flow for adding a recipe.</p>
+        <div class="content-area">
+          <div id="flows-description" class="section-body">
+            <p>
+              The onboarding flow was easy since I was able to reference
+              Yummly’s process. I also created flows for sharing, organizing
+              and adding recipes.
+            </p>
+            <p>
+              I used the user stories to determine what needs to be included
+              in these flows and utilized the other user flows I created for
+              Dropbox and Pinterest to guide me.
+            </p>
+            <a class="button" href="files/heirloom-userflows.pdf" target="_blank">See All User Flows</a>
+          </div>
+          <div id="flows-img" class="img-with-caption">
+            <img src="images/heirloom-flow.png" alt="Heirloom Adding Recipe User Flow" />
+            <p class="caption">Original user flow for adding a recipe.</p>
+          </div>
         </div>
       </section>
       <section id="user-personas">
         <h3 class="section-header">User Personas</h3>
-        <div id="personas-description" class="section-body">
-          <p class="italic">
-            How would someone use this application for their family recipes
-            versus recipes found online?
-          </p>
-          <p class="italic">
-            What kind of information will this user need or want for a recipe?
-          </p>
-          <p class="italic">
-            What demographic is this being designed for?
-          </p>
-          <p class="bold">
-            Answering all these questions helped me determine different use
-            cases for this application which helped me create and prioritize
-            user stories and design the application itself.
-          </p>
-          <a class="button" href="files/heirloom-personas.pdf" target="_blank">See Full Personas</a>
-        </div>
-        <div id="personas-image">
-          <ul id="persona-1" class="persona">
-            <li>
-              <img src="images/heirloom-personas-jasmine.png" alt="Jasmine User Persona" />
-            </li>
-            <li>
-              Age: 22 <br/>
-              Occupation: Journalist <br/>
-              Location: Atlanta, GA <br/>
-              Gender: Female
-            </li>
-            <li class="bold">
-              “I don’t know too much about cooking so I call my mom a few
-              times a week to ask her for a recipe or how to do a certain
-              cooking technique like sautéing.”
-            </li>
-          </ul>
-          <ul id="persona-2" class="persona">
-            <li>
-              <img src="images/heirloom-personas-amelia.png" alt="Amelia User Persona" />
-            </li>
-            <li>
-              Age: 60 <br/>
-              Occupation: Retiree <br/>
-              Location: Pittsburgh, PA <br/>
-              Gender: Female
-            </li>
-            <li class="bold">
-              “I would love to share all of my recipes with my kids and have
-              the recipes live on for generations.”
-            </li>
-          </ul>
-          <ul id="persona-3" class="persona">
-            <li>
-              <img src="images/heirloom-personas-kyle.png" alt="Kyle User Persona" />
-            </li>
-            <li>
-              Age: 35 <br/>
-              Occupation: Trainer <br/>
-              Location: Boise, ID <br/>
-              Gender: Male
-            </li>
-            <li class="bold">
-              “I am always browsing online for new recipes to try and when I
-              find a good one, I want to highlight that recipe and make sure
-              to share it with my clients.”
-            </li>
-          </ul>
+        <div class="content-area">
+          <div id="personas-description" class="section-body">
+            <p class="italic">
+              How would someone use this application for their family recipes
+              versus recipes found online?
+            </p>
+            <p class="italic">
+              What kind of information will this user need or want for a recipe?
+            </p>
+            <p class="italic">
+              What demographic is this being designed for?
+            </p>
+            <p class="bold">
+              Answering all these questions helped me determine different use
+              cases for this application which helped me create and prioritize
+              user stories and design the application itself.
+            </p>
+            <a class="button" href="files/heirloom-personas.pdf" target="_blank">See Full Personas</a>
+          </div>
+          <div id="personas-image">
+            <ul id="persona-1" class="persona">
+              <li class="persona-img">
+                <img src="images/heirloom-personas-jasmine.png" alt="Jasmine User Persona" />
+              </li>
+              <li class="persona-info">
+                Age: 22 <br/>
+                Occupation: Journalist <br/>
+                Location: Atlanta, GA <br/>
+                Gender: Female
+              </li>
+              <li class="bold persona-quote">
+                “I don’t know too much about cooking so I call my mom a few
+                times a week to ask her for a recipe or how to do a certain
+                cooking technique like sautéing.”
+              </li>
+              <li class="persona-goals">
+                <span class="bold">Goals</span><br/>
+                1. Save shared recipes<br/>
+                2. Have a shared collection of recipes<br/>
+                3. Place for recipe tips/comments
+              </li>
+              <li class="persona-frustrations">
+                <span class="bold">Frustrations</span><br/>
+                1. Too many places to share recipes<br/>
+                2. Not one place to save recipes<br/>
+                3. Does not know all the cooking techniques required
+              </li>
+            </ul>
+            <ul id="persona-2" class="persona">
+              <li class="persona-img">
+                <img src="images/heirloom-personas-amelia.png" alt="Amelia User Persona" />
+              </li>
+              <li class="persona-info">
+                Age: 60 <br/>
+                Occupation: Retiree <br/>
+                Location: Pittsburgh, PA <br/>
+                Gender: Female
+              </li>
+              <li class="bold persona-quote">
+                “I would love to share all of my recipes with my kids and have
+                the recipes live on for generations.”
+              </li>
+              <li class="persona-goals">
+                <span class="bold">Goals</span><br/>
+                1. Store family recipes<br/>
+                2. Organize recipes into groups<br/>
+                3. Share recipes with friends
+              </li>
+              <li class="persona-frustrations">
+                <span class="bold">Frustrations</span><br/>
+                1. Unorganized collection of recipes<br/>
+                2. Not easily shareable<br/>
+                3. Difficult-to-use applications
+              </li>
+            </ul>
+            <ul id="persona-3" class="persona">
+              <li class="persona-img">
+                <img src="images/heirloom-personas-kyle.png" alt="Kyle User Persona" />
+              </li>
+              <li class="persona-info">
+                Age: 35 <br/>
+                Occupation: Trainer <br/>
+                Location: Boise, ID <br/>
+                Gender: Male
+              </li>
+              <li class="bold persona-quote">
+                “I am always browsing online for new recipes to try and when I
+                find a good one, I want to highlight that recipe and make sure
+                to share it with my clients.”
+              </li>
+              <li class="persona-goals">
+                <span class="bold">Goals</span><br/>
+                1. Save/store recipes found online<br/>
+                2. Tag recipes by diet<br/>
+                3. Share certain collections of recipes with clients
+              </li>
+              <li class="persona-frustrations">
+                <span class="bold">Frustrations</span><br/>
+                1. Unsorted list of recipes<br/>
+                2. Not able to bulk share with clients<br/>
+                3. Recipes bookmarked on only one of his browsers
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="user-stories">
         <h3 class="section-header">User Stories</h3>
-        <div id="stories-description" class="section-body">
-          <p>
-            From the survey and many iterations of testing,I was given a lot
-            of feedback on features people would like to see in a recipes
-            application.
-          </p>
-          <p>
-            I needed to sort through all these and determine what is mandatory
-            for the Minimum Viable Product, what would be great to have and
-            what can be in another round of this application’s development.
-          </p>
-        </div>
-        <div id="stories-image">
-          <div id="stories-image-header">
-            As a user, I want to
+        <div class="content-area">
+          <div id="stories-description" class="section-body">
+            <p>
+              From the survey and many iterations of testing,I was given a lot
+              of feedback on features people would like to see in a recipes
+              application.
+            </p>
+            <p>
+              I needed to sort through all these and determine what is mandatory
+              for the Minimum Viable Product, what would be great to have and
+              what can be in another round of this application’s development.
+            </p>
           </div>
-          <ul>
-            <li>upload pictures of recipes</li>
-            <li>enter recipes manually</li>
-            <li>save recipes from the web</li>
-            <li>add nutritional information to a recipe</li>
-            <li>share a recipe with a link that can be copy and pasted</li>
-            <li>create a collection to group recipes</li>
-            <li>search recipes by ingredient</li>
-            <li>edit a recipe</li>
-            <li>add tags to a recipe</li>
-          </ul>
+          <div id="stories-image">
+            <div id="stories-image-header">
+              As a user, I want to
+            </div>
+            <ul>
+              <li>upload pictures of recipes</li>
+              <li>enter recipes manually</li>
+              <li>save recipes from the web</li>
+              <li>add nutritional information to a recipe</li>
+              <li>share a recipe with a link that can be copy and pasted</li>
+              <li>create a collection to group recipes</li>
+              <li>search recipes by ingredient</li>
+              <li>edit a recipe</li>
+              <li>add tags to a recipe</li>
+            </ul>
+          </div>
         </div>
       </section>
       <h2 class="section-title">Design, Prototyping & Usability Testing</h2>
@@ -645,17 +696,17 @@
         </div>
         <ul>
           <li>
-            <a href="https://www.linkedin.com/in/emmakwiatkowski/">
+            <a href="https://www.linkedin.com/in/emmakwiatkowski/" target="_blank">
               <i class="fa fa-linkedin-square" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="https://twitter.com/emmakwiat">
+            <a href="https://twitter.com/emmakwiat" target="_blank">
               <i class="fa fa-twitter-square" aria-hidden="true"></i>
             </a>
           </li>
           <li>
-            <a href="https://github.com/EmmaRyn">
+            <a href="https://github.com/EmmaRyn" target="_blank">
               <i class="fa fa-github-square" aria-hidden="true"></i>
             </a>
           </li>
