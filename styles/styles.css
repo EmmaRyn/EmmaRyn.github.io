@@ -93,6 +93,7 @@ div, ul, img {
   display: block;
   font-family: 'Comfortaa', sans-serif;
   font-size: 1.4rem;
+  height: fit-content;
   margin: 1rem auto 4rem auto;
   padding: 1.8rem 0px;
   text-align: center;
@@ -759,33 +760,51 @@ li.comp-body {
   padding-top: 0;
 }
 
-#dropbox, #pinterest, #persona-1, #persona-2 {
+#dropbox, #pinterest {
   border-bottom: 2px solid var(--yellow);
 }
 
-.persona, #comp-container .section-body {
+#comp-container .section-body {
   margin: 0 auto;
-  max-width: 300px;
 }
 
-#personas-image {
+.persona {
   font-family: 'Comfortaa', sans-serif;
   margin: 0 auto;
+  padding-top: 2rem;
+  width: 80%;
 }
 
-#personas-image img {
-  padding-top: 3rem;
-  padding-bottom: 0px !important;
-  width: 100% !important;
-}
-
-#personas-image li {
+.persona li {
   font-size: 1.4rem;
+  max-width: 450px;
   padding-bottom: 3rem;
 }
 
-#persona-3 {
-  padding-bottom: 4rem;
+#jasmine-img {
+  max-width: 250px;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 100%;
+}
+
+.persona-list {
+  display: flex;
+  max-width: 500px;
+}
+
+.persona-list li {
+  padding-bottom: 0;
+  width: 50%;
+}
+
+.persona-info {
+  height: fit-content;
+  align-self: flex-end;
+}
+
+.persona-goals, .persona-list-image {
+  padding-right: 20px;
 }
 
 #stories-image {
@@ -815,6 +834,192 @@ li.comp-body {
 
 #survey-images, #stories-image {
   margin-top: 20px;
+}
+
+#branding .content-area, #branding-description, .font-list, .color-list, .logos-list  {
+  display: block;
+}
+
+#branding-description {
+  border-bottom: 2px solid var(--yellow);
+  margin: 0 auto;
+  max-width: unset;
+  width: 90%;
+}
+
+#branding-description p {
+  max-width: 450px;
+}
+
+#branding-button {
+  margin-top: 30px;
+}
+
+.branding-img {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0 auto;
+  margin-top: 70px;
+  max-width: 800px;
+  padding-top: 2rem;
+  width: 85%;
+}
+
+.branding-title {
+  border-bottom: 2px solid var(--yellow);
+  padding-bottom: 10px;
+}
+
+.branding-img > li {
+  padding-bottom: 5rem;
+}
+
+.font-list li {
+  max-width: 450px;
+}
+
+.font-1 {
+  font-family: 'Lobster Two', cursive;
+  font-size: 2rem;
+}
+
+.font-2 {
+  font-family: 'Muli', sans-serif;
+  font-size: 2rem;
+}
+
+.font-letters {
+  padding-bottom: 2rem;
+  width: 300px
+}
+
+.font-letters li {
+  display: -webkit-inline-box;
+  line-height: 1.5rem;
+  margin: 0 10px;
+  width: 25%;
+}
+
+.font-title {
+  font-size: 2.5rem;
+}
+
+#font-reg {
+  font-weight: 400;
+}
+
+#font-reg-italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+#font-el {
+  font-weight: 200;
+}
+
+#font-el-italic {
+  font-style: italic;
+  font-weight: 200;
+}
+
+#font-sb {
+  font-weight: 600;
+}
+
+#font-sb-italic {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.branding-caption {
+  font-size: 1.3rem;
+}
+
+.branding-type {
+  font-family: 'Muli', sans-serif;
+}
+
+.branding-h1 {
+  font-size: 4rem;
+  line-height: 5rem;
+}
+
+.branding-h2 {
+  font-size: 3.5rem;
+  line-height: 4rem;
+}
+
+.branding-h3 {
+  font-size: 3.1rem;
+  line-height: 4rem;
+}
+
+.branding-h4 {
+  font-size: 2.6rem;
+  line-height: 3rem;
+}
+
+.branding-h5 {
+  font-size: 2.3rem;
+  line-height: 3rem;
+}
+
+.branding-h6 {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.color-list, .logos-list {
+  padding-bottom: 2rem;
+}
+
+.color-list-item {
+  display: inline-block;
+  line-height: 2.5rem;
+  margin: 0 10px;
+  text-align: center;
+  width: 40%;
+}
+
+.color-list-item > div {
+  line-height: 5rem;
+  margin: 1rem 0;
+}
+
+#color-1 {
+  background-color: #CA3C25;
+}
+
+#color-2 {
+  background-color: #7FB069;
+}
+
+#color-3 {
+  background-color: #E85B45;
+}
+
+#color-4 {
+  background-color: #FB7A65;
+}
+
+#color-5 {
+  background-color: #474846;
+}
+
+#color-6 {
+  background-color: #EFEDED;
+}
+
+li.logos-list-item {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+li.logos-list-item > img {
+  max-width: 200px;
+  padding-bottom: 0;
+  padding-top: 0
 }
 
 #hifi .article-title {
@@ -914,7 +1119,7 @@ li.comp-body {
     padding: 0 20px;
   }
 
-  #dropbox, #pinterest, #persona-1, #persona-2 {
+  #dropbox, #pinterest {
     border-bottom: none;
   }
 
@@ -928,32 +1133,15 @@ li.comp-body {
   }
 
   .persona {
-    max-width: 300px;
-  }
-
-  .persona-info {
-    min-height: 100px;
-  }
-
-  .persona-quote {
-    min-height: 180px;
-  }
-
-  .persona-goals, .persona-frustrations  {
-    min-height: 180px;
-  }
-
-  #persona-2 {
-    padding: 0 30px;
-  }
-
-  #personas-image {
-    display: inline-flex;
+    border-left: 2px solid var(--yellow);
     justify-content: center;
+    padding-left: 50px;
+    width: auto;
   }
 
   #personas-description {
     display: inline-block;
+    margin-left: 0;
     padding: 0 20px;
     vertical-align: top;
   }
@@ -966,13 +1154,50 @@ li.comp-body {
     margin-bottom: 70px;
   }
 
-  #branding > div {
-    display: inline-block;
+  #branding-description, .font-list, .color-list, .logos-list {
+    display: flex;
   }
 
-  #branding-img {
-    max-width: 700px;
-    padding-top: 2rem;
+  #branding-description {
+    width: fit-content;
+  }
+
+  #branding-description-1 {
+    margin-right: 50px;
+  }
+
+  .font-styles {
+    margin-left: 70px;
+  }
+
+  .branding-h1 {
+    font-size: 80pt;
+    line-height: 9rem;
+  }
+
+  .branding-h2 {
+    font-size: 64pt;
+    line-height: 8rem;
+  }
+
+  .branding-h3 {
+    font-size: 52pt;
+    line-height: 5rem;
+  }
+
+  .branding-h4 {
+    font-size: 42pt;
+    line-height: 5rem;
+  }
+
+  .branding-h5 {
+    font-size: 34pt;
+    line-height: 5rem;
+  }
+
+  .branding-h6 {
+    font-size: 20pt;
+    line-height: 3rem;
   }
 
   #hifi > div.section-body {

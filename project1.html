@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,400i,700|Comfortaa:300,400,700|Sofia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two|Muli:200,200i,400,400i,600,600i" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Styles -->
@@ -348,93 +349,57 @@
               cases for this application which helped me create and prioritize
               user stories and design the application itself.
             </p>
-            <a class="button" href="files/heirloom-personas.pdf" target="_blank">See Full Personas</a>
+            <a class="button" href="files/heirloom-personas.pdf" target="_blank">See All Personas</a>
           </div>
-          <div id="personas-image">
-            <ul id="persona-1" class="persona">
-              <li class="persona-img">
-                <img src="images/heirloom-personas-jasmine.png" alt="Jasmine User Persona" />
-              </li>
-              <li class="persona-info">
-                Age: 22 <br/>
-                Occupation: Journalist <br/>
-                Location: Atlanta, GA <br/>
-                Gender: Female
-              </li>
-              <li class="bold persona-quote">
-                “I don’t know too much about cooking so I call my mom a few
-                times a week to ask her for a recipe or how to do a certain
-                cooking technique like sautéing.”
-              </li>
-              <li class="persona-goals">
-                <span class="bold">Goals</span><br/>
-                1. Save shared recipes<br/>
-                2. Have a shared collection of recipes<br/>
-                3. Place for recipe tips/comments
-              </li>
-              <li class="persona-frustrations">
-                <span class="bold">Frustrations</span><br/>
-                1. Too many places to share recipes<br/>
-                2. Not one place to save recipes<br/>
-                3. Does not know all the cooking techniques required
-              </li>
-            </ul>
-            <ul id="persona-2" class="persona">
-              <li class="persona-img">
-                <img src="images/heirloom-personas-amelia.png" alt="Amelia User Persona" />
-              </li>
-              <li class="persona-info">
-                Age: 60 <br/>
-                Occupation: Retiree <br/>
-                Location: Pittsburgh, PA <br/>
-                Gender: Female
-              </li>
-              <li class="bold persona-quote">
-                “I would love to share all of my recipes with my kids and have
-                the recipes live on for generations.”
-              </li>
-              <li class="persona-goals">
-                <span class="bold">Goals</span><br/>
-                1. Store family recipes<br/>
-                2. Organize recipes into groups<br/>
-                3. Share recipes with friends
-              </li>
-              <li class="persona-frustrations">
-                <span class="bold">Frustrations</span><br/>
-                1. Unorganized collection of recipes<br/>
-                2. Not easily shareable<br/>
-                3. Difficult-to-use applications
-              </li>
-            </ul>
-            <ul id="persona-3" class="persona">
-              <li class="persona-img">
-                <img src="images/heirloom-personas-kyle.png" alt="Kyle User Persona" />
-              </li>
-              <li class="persona-info">
-                Age: 35 <br/>
-                Occupation: Trainer <br/>
-                Location: Boise, ID <br/>
-                Gender: Male
-              </li>
-              <li class="bold persona-quote">
-                “I am always browsing online for new recipes to try and when I
-                find a good one, I want to highlight that recipe and make sure
-                to share it with my clients.”
-              </li>
-              <li class="persona-goals">
-                <span class="bold">Goals</span><br/>
-                1. Save/store recipes found online<br/>
-                2. Tag recipes by diet<br/>
-                3. Share certain collections of recipes with clients
-              </li>
-              <li class="persona-frustrations">
-                <span class="bold">Frustrations</span><br/>
-                1. Unsorted list of recipes<br/>
-                2. Not able to bulk share with clients<br/>
-                3. Recipes bookmarked on only one of his browsers
-              </li>
-            </ul>
-          </div>
+          <ul class="persona">
+            <li class="persona-img">
+              <ul class="persona-list">
+                <li class="persona-list-image">
+                  <img id="jasmine-img" src="images/heirloom-personas-jasmine.png"
+                  alt="Jasmine User Persona" />
+                </li>
+                <li class="persona-info">
+                  Age: 22 <br/>
+                  Occupation: Journalist <br/>
+                  Location: Atlanta, GA <br/>
+                  Gender: Female
+                </li>
+              </ul>
+            </li>
+            <li class="bold persona-quote">
+              “I don’t know too much about cooking so I call my mom a few
+              times a week to ask her for a recipe or how to do a certain
+              cooking technique like sautéing.”
+            </li>
+            <li class="persona-goals-frustrations">
+              <ul class="persona-list">
+                <li class="persona-goals">
+                  <span class="bold">Goals</span><br/>
+                  1. Save shared recipes<br/>
+                  2. Have a shared collection of recipes<br/>
+                  3. Place for recipe tips/comments
+                </li>
+                <li class="persona-frustrations">
+                  <span class="bold">Frustrations</span><br/>
+                  1. Too many places to share recipes<br/>
+                  2. Not one place to save recipes<br/>
+                  3. Does not know all the cooking techniques required
+                </li>
+              </ul>
+            </li>
+            <li class="persona-motivations">
+              <span class="bold">Motivations</span><br/>
+              Jasmine just graduated from college, moved to a new city and started
+              her first job as a journalist for a local paper. As it's her first
+              time living on her own and she didn’t cook much in college, she is
+              now in charge of her meals for the first time ever. She loved
+              what her mom always cooked and she wants to have those on file.
+              Right now when she needs a recipe, she calls her mom and her mom
+              will email or text it. Jasmine is frustrated because she never
+              knows where to go to find that recipe her mom sent her that one
+              time and she has to ask her mom to resend the recipe often.
+            </li>
+          </ul>
         </div>
       </section>
       <section id="user-stories">
@@ -535,32 +500,122 @@
       </section>
       <section id="branding">
         <h3 class="section-header">Branding</h3>
-        <div id="branding-description" class="section-body">
-          <p>
-            Determining the font styles and the primary branding colors greatly
-            improved the efficiency of creating the mockups. It gave me
-            guidelines to begin my work with.  Once I could see how those
-            branding decisions affected the designs and prototype testing, then
-            I was able to tweak here and there. I ended up removing the darkest
-            color from the styleguide as that was never used, I tweaked the
-            icons and removed the logos that seemed like they would never be
-            utilized.
-          </p>
-          <p>
-            I also spent some time on logo design. The shape of the tomato
-            changed. Then I played with coloring and brand fonts. Then I tried
-            some different text placement. I ended with this logo which I am
-            pretty happy with as it is my first logo design.
-          </p>
-          <a class="button" href="files/heirloom-styleguide.pdf" target="_blank">See Full Style Guide</a>
-        </div>
-        <div class='img-with-caption'>
-          <img id="branding-img" src="images/heirloom-branding.png"
-          alt="Heirloom Style Guide" />
-          <p class="caption">
-            Branding style guide for heirloom which specifies the fonts, colors,
-            logos, buttons and icons to use.
-          </p>
+        <div class="content-area">
+          <div id="branding-description" class="section-body">
+            <p id="branding-description-1">
+              Determining the font styles and the primary branding colors greatly
+              improved the efficiency of creating the mockups. It gave me
+              guidelines to begin my work with.  Once I could see how those
+              branding decisions affected the designs and prototype testing, then
+              I was able to tweak here and there. I ended up removing the darkest
+              color from the styleguide as that was never used, I tweaked the
+              icons and removed the logos that seemed like they would never be
+              utilized.
+            </p>
+            <p id="branding-description-2">
+              I also spent some time on logo design. The shape of the tomato
+              changed. Then I played with coloring and brand fonts. Then I tried
+              some different text placement. I ended with this logo which I am
+              pretty happy with as it is my first logo design.
+              <a id="branding-button" class="button" href="files/heirloom-styleguide.pdf" target="_blank">See Full Style Guide</a>
+            </p>
+          </div>
+          <ul class='branding-img'>
+            <li class="branding-fonts">
+              <span class="bold branding-title">Font Families</span><br/><br/>
+              <ul class="font-list">
+                <li class="font-brand">
+                  <span class="font-1">Lobster Two</span><br/>
+                  <span class="branding-caption">This font is only to be used for the brand name.</span>
+                  <br/><br/>
+                  <div class="font-1">heirloom</div><br/><br/>
+                </li>
+                <li class="font-styles">
+                  <span class="font-2">Muli</span><br/>
+                  <span class="branding-caption">This font is to be used for all text other than the brand name when being used as a logo. When it is unavailable, a sans-serif font should be the default.</span>
+                  <br/><br/>
+                  <ul class="font-letters">
+                    <li id="font-reg" class="font-2 font-title">Aa<br/><span class="branding-caption">Regular</span></li>
+                    <li id="font-el" class="font-2 font-title">Aa<br/><span class="branding-caption">ExtraLight</span></li>
+                    <li id="font-sb" class="font-2 font-title">Aa<br/><span class="branding-caption">SemiBold</span></li>
+                  </ul>
+                  <ul class="font-letters">
+                    <li id="font-reg-italic" class="font-2 font-title">Aa<br/><span class="branding-caption">Italic</span></li>
+                    <li id="font-el-italic" class="font-2 font-title">Aa<br/><span class="branding-caption">ExtraLight Italic</span></li>
+                    <li id="font-sb-italic" class="font-2 font-title">Aa<br/><span class="branding-caption">SemiBold Italic</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="branding-type">
+              <span class="bold branding-title">Typography</span><br/><br/>
+              <span class="branding-h1">Header 1 - 80pt</span><br/>
+              <span class="branding-h2">Header 2 - 64pt</span><br/>
+              <span class="branding-h3">Header 3 - 52pt</span><br/>
+              <span class="branding-h4">Header 4 - 42pt</span><br/>
+              <span class="branding-h5">Header 5 - 34pt</span><br/>
+              <span class="branding-h6">Header 6 - 20pt</span><br/>
+            </li>
+            <li class="branding-colors">
+              <span class="bold branding-title">Color Palette</span><br/><br/>
+              <ul class="color-list">
+                <li class="color-list-item">
+                  Primary
+                  <div id="color-1">&nbsp;</div>
+                  dark red<br/>#CA3C25
+                </li>
+                <li class="color-list-item">
+                  Secondary
+                  <div id="color-2">&nbsp;</div>
+                  green<br/>#7FB069
+                </li>
+                <li class="color-list-item">
+                  <br/>
+                  <div id="color-3">&nbsp;</div>
+                  rose<br/>#E85B45
+                </li>
+                <li class="color-list-item">
+                  <br/>
+                  <div id="color-4">&nbsp;</div>
+                  light pink<br/>#FB7A65
+                </li>
+                <li class="color-list-item">
+                  <br/>
+                  <div id="color-5">&nbsp;</div>
+                  gray<br/>#474846
+                </li>
+                <li class="color-list-item">
+                  <br/>
+                  <div id="color-6">&nbsp;</div>
+                  light gray<br/>#EFEDED
+                </li>
+            </li>
+          </ul>
+          <li class="branding-logos">
+            <span class="bold branding-title">Logos</span><br/><br/>
+            <ul class="logos-list">
+              <li class="logos-list-item">
+                <img src="images/heirloom-logo.png" alt="Heirloom logo" /><br/>
+                Logo without text
+              </li>
+              <li class="logos-list-item">
+                <img src="images/heirloom-text-logo.png" alt="Heirloom logo with text" /><br/>
+                Logo with text
+              </li>
+              <li class="logos-list-item">
+                <img src="images/heirloom-grayscale-logo.png" alt="Heirloom grayscale logo" /><br/>
+                Grayscale logo without text
+              </li>
+              <li class="logos-list-item">
+                <img src="images/heirloom-grayscale-text-logo.png" alt="Heirloom grayscale logo with text" /><br/>
+                Grayscale logo with text
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a id="branding-button" class="button" href="files/heirloom-styleguide.pdf" target="_blank">See Full Style Guide</a>
+          </li>
+        </ul>
         </div>
       </section>
       <section id="hifi">
