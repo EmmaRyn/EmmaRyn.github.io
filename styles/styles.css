@@ -496,13 +496,17 @@ footer ul > li > a {
 .caption {
   font-size: 1.2rem;
   line-height: 1.7rem;
-  margin: 1rem;
-  width: 90%;
+  margin: 2rem;
 }
 
 .img-with-caption > img {
   padding-bottom: 0 !important;
   padding-top: 2rem;
+}
+
+.image-caption-list {
+  list-style: circle;
+  list-style-position: inside;
 }
 
 @media screen and (min-width: 800px){
@@ -1135,7 +1139,7 @@ li.logos-list-item > img {
   .persona {
     border-left: 2px solid var(--yellow);
     justify-content: center;
-    padding-left: 50px;
+    padding-left: 70px;
     width: auto;
   }
 
