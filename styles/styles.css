@@ -811,6 +811,18 @@ li.comp-body {
   padding-right: 20px;
 }
 
+#flow-image-area {
+  display: block;
+}
+
+#flow-image-area .img-with-caption {
+  width: 100%;
+}
+
+#flow-image-area .img-with-caption > img {
+  padding-top: 2rem;
+}
+
 #stories-image {
   font-family: 'Comfortaa', sans-serif;
   margin: 0 auto;
@@ -936,40 +948,6 @@ li.comp-body {
 
 .branding-caption {
   font-size: 1.3rem;
-}
-
-.branding-type {
-  font-family: 'Muli', sans-serif;
-}
-
-.branding-h1 {
-  font-size: 4rem;
-  line-height: 5rem;
-}
-
-.branding-h2 {
-  font-size: 3.5rem;
-  line-height: 4rem;
-}
-
-.branding-h3 {
-  font-size: 3.1rem;
-  line-height: 4rem;
-}
-
-.branding-h4 {
-  font-size: 2.6rem;
-  line-height: 3rem;
-}
-
-.branding-h5 {
-  font-size: 2.3rem;
-  line-height: 3rem;
-}
-
-.branding-h6 {
-  font-size: 1.8rem;
-  line-height: 2.4rem;
 }
 
 .color-list, .logos-list {
@@ -1158,6 +1136,11 @@ li.logos-list-item > img {
     margin-bottom: 70px;
   }
 
+  #sketches-image .img-with-caption {
+    margin: 0 5%;
+    width: 35%;
+  }
+
   #branding-description, .font-list, .color-list, .logos-list {
     display: flex;
   }
@@ -1172,36 +1155,6 @@ li.logos-list-item > img {
 
   .font-styles {
     margin-left: 70px;
-  }
-
-  .branding-h1 {
-    font-size: 80pt;
-    line-height: 9rem;
-  }
-
-  .branding-h2 {
-    font-size: 64pt;
-    line-height: 8rem;
-  }
-
-  .branding-h3 {
-    font-size: 52pt;
-    line-height: 5rem;
-  }
-
-  .branding-h4 {
-    font-size: 42pt;
-    line-height: 5rem;
-  }
-
-  .branding-h5 {
-    font-size: 34pt;
-    line-height: 5rem;
-  }
-
-  .branding-h6 {
-    font-size: 20pt;
-    line-height: 3rem;
   }
 
   #hifi > div.section-body {
