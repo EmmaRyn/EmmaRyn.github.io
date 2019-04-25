@@ -691,8 +691,8 @@ footer ul > li > a {
   padding-bottom: 2rem;
 }
 
-#problem > ul > li, #solution > ul > li  {
-  padding-bottom: 1rem;
+#solution ul > li  {
+  padding-bottom: 2.5rem;
 }
 
 #survey-stats {
@@ -814,6 +814,10 @@ li.comp-body {
 
 .persona-goals, .persona-list-image {
   padding-right: 20px;
+}
+
+.persona-quote {
+  text-indent: -3px;
 }
 
 #flow-image-area {
@@ -1141,6 +1145,10 @@ li.logos-list-item > img {
 
   #sketches .section-body, #wireframes .section-body {
     margin-bottom: 70px;
+  }
+
+  #sketches .section-body {
+    margin-left: 8%;
   }
 
   #sketches-image .img-with-caption {
