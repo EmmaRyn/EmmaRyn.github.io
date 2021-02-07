@@ -428,6 +428,14 @@ footer ul > li > a {
   #contact, .circle-nav-rect {
     display: none;
   }
+
+  .yellow-bg {
+    color: var(--navy);
+  }
+
+  .teal-bg {
+    color: var(--offwhite);
+  }
 }
 
 /* Work Styles */
