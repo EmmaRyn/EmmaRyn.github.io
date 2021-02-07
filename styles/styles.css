@@ -114,7 +114,7 @@ h1 {
 h2 {
   font-family: 'Sofia', sans-serif;
   font-size: 4rem;
-  padding: 2rem 0rem;
+  padding: 3rem 0rem;
 }
 
 h3 {
@@ -232,8 +232,12 @@ footer ul > li > a {
   padding-top: 0;
 }
 
-#project-1 {
+.teal-bg {
   background-color: var(--teal);
+}
+
+.yellow-bg {
+  background-color: var(--yellow);
 }
 
 #homepage main section, #work-container main section {
@@ -248,7 +252,7 @@ footer ul > li > a {
   justify-content: space-between;
 }
 
-#project-info{
+.project-info {
   left: 0;
   margin: 15rem auto;
   position: absolute;
@@ -271,26 +275,26 @@ footer ul > li > a {
   margin-top: 50%;
 }
 
-#project-1-story, #project-1-roles {
+.project-story, .project-roles {
   font-size: 1.5rem;
   font-weight: normal;
   line-height: 2rem;
 }
 
-#project-1-story {
+.project-story {
   margin: 0 auto;
   max-width: 250px;
   padding: 2rem 0;
 }
 
-#project-1 .button {
+.project .button {
   background-color: var(--navy);
   color: var(--offwhite);
   margin-top: 3rem;
 }
 
-#project-1 .button:hover {
-  background-color: var(--yellow);
+.project .button:hover {
+  background-color: var(--offwhite);
   color: var(--navy);
 }
 
@@ -309,19 +313,28 @@ footer ul > li > a {
     float: left;
   }
 
-  #project-info {
-      background-color: var(--red);
-      border: 20px solid var(--offwhite);
-      border-radius: 300px;
-      color: var(--offwhite);
-      height: 300px;
-      line-height: 2rem;
-      margin: 8rem 10rem auto auto;
+  .project-info {
+    background-color: var(--red);
+    border: 20px solid var(--offwhite);
+    border-radius: 300px;
+    color: var(--offwhite);
+    height: 300px;
+    line-height: 2rem;
+  }
+
+  .circle-right .project-info {
+      margin: 7rem 10rem auto auto;
       padding: 40px;
       width: 300px;
   }
 
-  #project-1 .button {
+  .circle-left .project-info {
+      margin: 8rem 10rem;
+      padding: 40px;
+      width: 300px;
+  }
+
+  .project .button {
     margin-top: 1rem;
     width: 200px;
   }
@@ -376,9 +389,14 @@ footer ul > li > a {
     margin-left: -50px;
   }
 
-  #circle-nav-rect-4 {
+  .circle-right .circle-nav-rect {
     right: 0;
     margin-right: 28rem;
+  }
+
+  .circle-left .circle-nav-rect {
+    left: 0;
+    margin-left: 28rem;
   }
 
   #contact {
@@ -684,7 +702,7 @@ footer ul > li > a {
   text-transform: uppercase;
 }
 
-#problem, #user-survey, #user-flows, #user-stories, .image-area {
+.alt-bg-color, .image-area {
   background-color: var(--alternating);
 }
 
@@ -1016,20 +1034,20 @@ li.logos-list-item > img {
   padding-top: 0
 }
 
-#hifi .article-title {
+.work-rounds .article-title {
   border-top: 2px solid var(--yellow);
-  max-width: 200px;
+  max-width: 400px;
   padding-top: 2rem;
   padding-bottom: 0;
   width: 60%;
 }
 
-#hifi .section-body {
+.work-rounds .section-body {
   margin-bottom: 50px;
   margin-top: 70px;
 }
 
-#hifi-conclusion {
+.workrounds .work-rounds-conclusion {
   border-top: 2px solid var(--yellow);
   padding: 2rem 0;
 }
