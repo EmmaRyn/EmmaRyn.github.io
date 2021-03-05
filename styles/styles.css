@@ -328,6 +328,12 @@ footer ul > li > a {
       width: 300px;
   }
 
+  .circle-middle .project-info {
+      margin: 6rem auto;
+      padding: 40px;
+      width: 300px;
+  }
+
   .circle-left .project-info {
       margin: 8rem 10rem;
       padding: 40px;
@@ -392,6 +398,10 @@ footer ul > li > a {
   .circle-right .circle-nav-rect {
     right: 0;
     margin-right: 28rem;
+  }
+
+  .circle-middle .circle-nav-rect {
+    margin: 0 49%;
   }
 
   .circle-left .circle-nav-rect {
@@ -525,6 +535,11 @@ footer ul > li > a {
   font-size: 1.2rem;
   line-height: 1.7rem;
   margin: 2rem;
+}
+
+.caption-big {
+  padding-bottom: 4rem;
+  padding-top: 2rem;
 }
 
 .img-with-caption > img {
