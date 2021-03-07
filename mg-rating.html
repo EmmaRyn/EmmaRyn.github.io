@@ -46,7 +46,8 @@
       <div class="hero">
         <h1>Carrier Rating</h1>
         <p class="slogan">
-            A project I did for MercuryGate to redesign old rating screens.
+            A redesign of old rating screens for MercuryGate's
+            Transportation Management Software.
         </p>
       </div>
     </header>
@@ -76,13 +77,13 @@
         <h3 class="section-header">The Problem</h3>
         <div class="content-area">
           <div id="problem-description" class="section-body">
-            <p><span class="article-title">What Is Rating</span><br/>
+            <p><span class="article-title">What Is Carrier Rating?</span><br/>
             In the transportation industry, there is a process called “Rating”
-            which is putting a quote from a carrier on a load. This quote can be
+            which is adding a quote from a carrier on a load. This quote can be
             retrieved many ways, one of which is manual entry.</p>
-            <p> There are a lot of configurations that can be applied to a
+            <p> There are many configurations that can be applied to a
               manual rating screen, such as charge-level currency, charge-level references
-              or distributing a charge amongst many loads.</p>
+              and distributing a charge amongst many loads.</p>
           </div>
           <ul class="section-body">
             <li><p class="article-title">Here is an Example:</p></li>
@@ -94,17 +95,34 @@
             </li>
             <li>
               <p>
-                I call up this carrier that I know does a good job. He says
+                I call up a carrier that I trust to do a good job. He says
                 "I will do it for $500 plus 2 cents for every mile to cover fuel."
               </p>
             </li>
             <li>
               <p>
-                I enter in his carrier information and the rate he provided
-                and put it onto my load of 100 water bottles.
+                I enter the carrier information and the rate provided on the
+                Carrier Rating screen and save it to my load of 100 water bottles.
               </p>
             </li>
           </ul>
+        </div>
+        <div class="full-width-text">
+          <p>
+            I was assigned this project because our customers
+            are spread out over three different codebases. We needed everyone on
+            the same, newest codebase. However, Carrier Rating wasn't the same on
+            every codebase, so I needed to understand the differences and what
+            customers actually needed to move to the newest codebase.
+          </p>
+        </div>
+        <div class="img-with-caption image-centered">
+          <img src="images/rating/legacyrates.png"
+            alt="Legacy Rating Screen Design" />
+          <p class="caption">
+            This is the original Carrier Rating screen that is still in use in
+            the software.
+          </p>
         </div>
       </section>
       <section id="solution">
@@ -125,8 +143,13 @@
             </li>
           </ul>
         </div>
-        <img id="solution-img" src="images/rating/design-1.png"
+        <div class="img-with-caption image-centered">
+          <img id="solution-img" src="images/rating/design-1.png"
             alt="Intial Rating Screen Design" />
+          <p class="caption">
+            This is the final design that I submitted to the development team.
+          </p>
+        </div>
       </section>
       <h2 class="section-title">Research & Discovery</h2>
       <section id="rating-ux-audit" class="alt-bg-color">
@@ -135,17 +158,18 @@
           <div class="section-body">
             <p>
               <span class="bold">There was a lot learning ahead of me.</span>
-              My first step to understanding was to learn what Rating is. This
+              In order to fully understand the problem, my first step was to
+              learn about rating and how it works in the MercuryGate software. This
               included external research as well as reading internal documentation.
             </p>
             <p>
-              Then I looked at the existing screens within the system and played
-              with them to help me understand the current interaction.
+              I then reviewed the existing screens within the system and simulated
+              various scenarios to help me understand the current interaction.
             </p>
           </div>
           <div class="section-body">
             <p>
-              All of this external and internal research helped me learn the
+              The external and internal research helped me learn the
               relevant terminology and customer use cases which
               would be important for communicating with stakeholders.
             </p>
@@ -156,14 +180,15 @@
             <img id="rating-legacy-img" src="images/rating/legacyrates.png"
                 alt="Old Legacy Rating Screen" />
             <div class="caption">
-              This is the oldest rating screen that still exists in the sytem.
+              This is the original rating screen that exists on the legacy codebase.
             </div>
           </div>
           <div class='img-with-caption'>
             <img id="rating-ezclick-img" src="images/rating/ezclickrates.png"
                       alt="Other Old Rating Screen" />
             <div class="caption">
-              This is a slightly less old version of the manual rating screen.
+              This is a more current version of the rating screen on a
+              different codebase.
             </div>
           </div>
         </div>
@@ -172,10 +197,10 @@
         <h3 class="section-header">Stakeholder Interviews</h3>
         <div class="content-area">
           <p class="section-body">
-            I spoke to internal stakeholders such as Product Managers,
-            Business Solutions Architect and Implementation Specialists to
-            learn about how customers use Manual Rating now. What makes the
-            current process difficult?
+            I spoke to internal stakeholders including Product Managers,
+            Business Solutions Architects and Implementation Specialists to
+            learn how customers currently use Carrier Rating and to understand
+            the pain points.
           </p>
         </div>
       </section>
@@ -183,7 +208,7 @@
         <h3 class="section-header">Design Research</h3>
         <div class="content-area">
           <p class="section-body">
-            I did a search on google and dribbble
+            I conducted a search on google and dribbble
             for some inspiration. I looked for invoices, receipts, rates and
             quotes to understand how charges and totals are written and read.
           </p>
@@ -194,16 +219,15 @@
         <div class="section-body">
           <p class="article-title">Carrier Information</p>
           <p>
-          There were two areas of information that I tackled separately. The
-          top area of carrier data was just a matter of organizing the fields
-          in a way they make sense. I put all possible required fields on the
-          left since that would be the first area a user would look at. When
-          organizing the rest of the panel, I looked at data length and the
-          relationship between other fields into consideration.
+          There were two areas of information that I tackled.
+          The carrier information needed to be organized in a logical manner. I
+          put all required fields on the left, as that would be the first area
+          a user would see. For organizing the rest of the carrier information area,
+          I considered data length, importance and the relationship between other fields.
           </p>
         </div>
         <div class="image-area">
-          <div id="rating-design-1" class="img-with-caption">
+          <div id="rating-design-1" class="img-with-caption image-centered">
             <img src="images/rating/design-1.png"
             alt="Rating Mockup" />
             <p class="caption">The carrier information panel organized with
@@ -214,12 +238,12 @@
         <div class="section-body">
           <p class="article-title">Rate Table</p>
           <p>
-          When designing the rate table, I lined the input fields up in a way
-          that it read like a sentence. One of the problems with the existing
-          screen was trying to put too much information on one line and
+          When designing the rate table, I organized the input fields to match
+          common receipt and invoice models. One of the issues with the existing
+          screen was too much information on one line,
           cluttering the page with less important details. During the
           redesign, I prioritized the information and went through many
-          iterations on how to expose the primary information.
+          iterations on a better way to expose the primary information.
           </p>
         </div>
         <div id="rating-design-images" class="image-area">
@@ -242,13 +266,13 @@
         <div class="section-body">
           <p class="article-title">Secondary Charge Details</p>
           <p>
-          Anything that was secondary information, was only exposed when a
+          In my design, secondary information was only exposed when a
           charge line was expanded. This helped the page remain simple and
           readable.
           </p>
         </div>
         <div id="rating-design-3" class="image-area">
-          <div class='img-with-caption'>
+          <div class='img-with-caption image-centered'>
             <img id="rating-design-3-img" src="images/rating/expandedrow.png"
             alt="Rate Table with Expanded Charge Row" />
             <p class="caption">
@@ -258,8 +282,8 @@
         </div>
         <div class="section-body">
           <p class="work-rounds-conclusion">
-            I went through many iterations of these designs, reviewing with the
-            UX team and the stakeholders.
+            As I iterated on the designs, I reviewed them with the
+            UX team and stakeholders.
           </p>
         </div>
       </section>
@@ -268,42 +292,44 @@
         <div class="section-body">
           <p class="article-title">Ready for Grooming</p>
           <p>
-          When a development team was ready to pick this up, the Product Owner
-          mentioned some Rating features that had not been mentioned up until
-          then. This included charge-level currency and assigning charges to a
-          specific stop. I quickly had to add in additional fields and re-work
-          some of the charge rows to add in more information. We did some
-          quick review sessions on these designs and then implementation was
-          ready to begin.
+          As the development team was ready to start working on the new design,
+          the Product Owner brought up some new features to include. Due to the
+          simplification and scalability of the design, I was able to quickly
+          add in additional fields. I held review sessions on these
+          designs and then implementation was ready to begin.
           </p>
         </div>
         <div id="rating-design-1" class="image-area">
-          <div class='img-with-caption'>
+          <div class='img-with-caption image-centered'>
             <img src="images/rating/expandedrow-allfields.png"
             alt="Rating Mockup with all possible fields" />
             <p class="caption">
               After talking with a Product Owner, additional fields were needed
-              on each charge row. The current design was scalable so all I needed
-              to do was make room in the expanded row.
+              on each charge row. The current design was scalable so I only needed
+              to make room in the expanded row.
             </p>
           </div>
         </div>
         <div class="section-body">
-          <p class="article-title">In Development</p>
+          <p class="article-title">In Production</p>
           <p>
-          A contractor team was in charge of developing this. This was one of my
-          first times directly leading the UX part of an epic. They asked
-          questions about components and I answered. I tried to give lots of
-          feedback as I watched their progress, but as it was a bit rushed,
-          there were some misses.
+            The development team finished implementing the new screen and now
+            our customers are using this newer version.
           </p>
         </div>
         <div class="image-area">
           <div class='img-with-caption'>
+            <img src="images/rating/legacyrates.png"
+            alt="Developed rating screen" />
+            <p class="caption">
+              This is the legacy screen that customers use.
+            </p>
+          </div>
+          <div class='img-with-caption'>
             <img src="images/rating/dev-1.png"
             alt="Developed rating screen" />
             <p class="caption">
-              This is the existing screen now being used by customers.
+              This is the newly developed screen now being used by customers.
             </p>
           </div>
         </div>
@@ -311,12 +337,10 @@
       <h2 id="conclusion-title" class="section-title">Conclusion</h2>
       <section id="conclusion">
           <p class="section-body">
-            I learned that more documentation detailing components and spacing
-            is necessary for communicating complex designs, especially with
-            contractor groups who are less familiar with the component system.
-            I also learned that I need to insert myself more into these
-            contractor groups so I can give more immediate feedback, which
-            would decrease the number of open UX issues at the end.
+            I learned that interviewing stakeholders upfront for information and
+            reviewing designs with them is an important way to make sure all use
+            cases are accounted for. This results in a design on which all internal
+            parties are aligned.
           </p>
       </section>
     </main>

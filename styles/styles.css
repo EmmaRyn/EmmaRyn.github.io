@@ -527,8 +527,17 @@ footer ul > li > a {
   width: 90%;
 }
 
+.full-width-text {
+  margin: 3rem auto;
+  max-width: 70%;
+}
+
 .image-area {
   padding-bottom: 3rem;
+}
+
+.image-centered {
+  margin:auto;
 }
 
 .caption {
